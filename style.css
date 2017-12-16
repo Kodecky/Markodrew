@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightslategray !important;
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);
+}
+
+section{
+    margin-bottom: 70px;
+}
+
+/*========header========*/
+
+header nav .container-fluid{
+    width: 80%;
+    margin: 0 auto;
+}
+header nav .navbar-brand span{
+    font-size: 30px;
+}
+
+
+/*========carousel section========*/
+
+.carousel{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.item{
+    position: relative;
+}
+[class*="carousel-item-"]{
+    position: absolute;
+    top: 10%;
+}
+.slogan-first{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    font-size: 70px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+}
+.slogan-second{
+    position: absolute;
+    top: 65%;
+    left: 75%;
+    font-size: 70px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+}
+.slogan-third{
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    font-size: 70px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+}
+.slogan-fourth{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    font-size: 70px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+}
+/*.carousel-inner span{
+    font-size: 20px;
+    background-color: rgba(45, 45, 45, 0.7);
+    padding: 5px 10px;
+    border-radius: 10px;
+}*/
+
+/*========offer section==========*/
+
+.offer .container h1,
+.offer .container h2,
+.offer .container h3,
+.offer .container h4,
+.offer .container h5,
+.offer .container h6{
+    color: #f1c40f;
+    display: inline-block;
+}
+.offer .container p{
+    color: lavender;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 10%;
+    font-size: 16px;
+    line-height: 1.4em;    
+}
+
+/*========about us section========*/
+
+.aboutUs .container h1,
+.aboutUs .container h2,
+.aboutUs .container h3,
+.aboutUs .container h4,
+.aboutUs .container h5,
+.aboutUs .container h6{
+    color: #3498db;
+}
+.aboutUs .container small{
+    color: #2980b9;
+}
+.aboutUs .container p{
+    color: lavender;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 10%;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+/*=========hr=========*/
+
+.horizontal-up{
+    width: 55%;
+    margin-left: 15%;
+}
+.horizontal-mid{
+    width: 40%;
+    margin-left: 40%;
+}
+.horizontal-down{
+    width: 30%;
+    margin-left: 25%;
+}
+    
+/*=========contact section=========*/
+
+.contact .container .address{
+    margin-bottom: 50px;
+}
+.contact .container .address h1,
+.contact .container .address h2,
+.contact .container .address h3,
+.contact .container .address h4,
+.contact .container .address h5,
+.contact .container .address h6{
+    color: #27ae60;
+}
+.contact .container .address p{
+    color: lavender;
+    font-size: 18px;
+    line-height: 2em;
+    padding: 20px 0;
+}
+.contact .container .wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+/*==========footer=========*/
+
+footer{
+    background-color: #222;
+    height: 80px;
+    display: flex;     
+}
+footer div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer span{
+    color: lavender;
+    font-size: 16px;  
+}
