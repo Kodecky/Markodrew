@@ -5,7 +5,8 @@ body{
     margin: 0;
     padding: 0;
     background-color: lightslategray !important;
-    background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);
+    /*background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);*/
+    background-image: url(background/wood-1759566_1920.jpg);
 }
 
 section{
