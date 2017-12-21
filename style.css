@@ -95,6 +95,25 @@ header nav .navbar-brand span{
     line-height: 1.4em;    
 }
 
+/*=======gallery section=========*/
+
+[class*="image-"]{
+    position: relative;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background: rgba( 40, 40, 40 ,0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+[class*="image-"]:hover .layer{
+    display: block;
+}
+
+
 /*========about us section========*/
 
 .aboutUs .container h1,
