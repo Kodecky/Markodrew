@@ -120,7 +120,7 @@ header nav ul li a:hover{
         font-size: 10px;
     }
     .offer .container h2{
-        font-size: 23px;
+        font-size: 21px;
     }
     .offer .container p{
         width: 90%;
@@ -259,6 +259,6 @@ footer span{
 }
 @media (max-width: 767px){
     footer span{
-    font-size: 15px;  
+    font-size: 13px;  
 } 
 }
