@@ -4,6 +4,7 @@
 body{
     margin: 0;
     padding: 0;
+    padding-top: 100px;
     background-color: lightslategray !important;
     /*background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);*/
     background-image: url(background/wood-1759566_1920.jpg);
@@ -176,12 +177,17 @@ header nav ul li a:hover{
 .layer span{
     color: white;
     font-size: 18px;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Merienda', sans-serif;
 }
 [class*="image-"]:hover .layer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 767px){
+    .layer span{
+        font-size: 25px;
+    }
 }
 
 
