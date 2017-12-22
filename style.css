@@ -18,6 +18,7 @@ section{
 header nav .container-fluid{
     width: 80%;
     margin: 0 auto;
+    position: relative;
 }
 header nav .navbar-brand span{
     font-size: 30px;
@@ -30,6 +31,36 @@ header nav ul li a{
 }
 header nav ul li a:hover{
     transform: scale(1.2);
+}
+.dropdown{
+    display: none;
+    float: right;
+    margin-top: 10px;
+}
+.dropdown .dropdown-menu{
+    background-color: #888;
+}
+.dropdown .dropdown-menu li{
+    text-align: center;
+}
+.dropdown .dropdown-menu li a{
+    transition: .1s; 
+    border-radius: 5px;
+}
+.dropdown .dropdown-menu li a:hover{
+    color: white;
+    background-color: #333;
+}
+@media (max-width: 767px){
+    .navbar-header{
+        display: inline-block;
+    }
+    .dropdown{
+        display: inline-block;
+    }
+    .dropdown a:hover{
+        transform: scale(0.9);
+    }
 }
 
 
