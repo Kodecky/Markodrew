@@ -21,6 +21,15 @@ header nav .container-fluid{
 }
 header nav .navbar-brand span{
     font-size: 30px;
+    font-family: 'Merienda', cursive;
+}
+header nav ul li a{
+    font-size: 18px;
+    font-family: 'Play', sans-serif;
+    transition: .5s;
+}
+header nav ul li a:hover{
+    transform: scale(1.2);
 }
 
 
@@ -69,12 +78,16 @@ header nav .navbar-brand span{
     font-family: 'Great Vibes', cursive;
     font-weight: 400;
 }
-/*.carousel-inner span{
-    font-size: 20px;
-    background-color: rgba(45, 45, 45, 0.7);
-    padding: 5px 10px;
-    border-radius: 10px;
-}*/
+@media (max-width: 767px){
+    [class*="slogan-"]{
+        font-size: 45px;
+    }
+    .slogan-third{
+        top: 58%;
+        left: 2%;
+    }
+}
+
 
 /*========offer section==========*/
 
@@ -86,6 +99,7 @@ header nav .navbar-brand span{
 .offer .container h6{
     color: #f1c40f;
     display: inline-block;
+    font-family: 'Archivo Black', sans-serif;
 }
 .offer .container p{
     color: lavender;
@@ -93,7 +107,24 @@ header nav .navbar-brand span{
     margin: 0 auto;
     padding: 30px 10%;
     font-size: 18px;
-    line-height: 1.4em;    
+    line-height: 1.4em; 
+    font-family: 'Play', sans-serif;
+}
+@media (max-width: 767px){
+    .offer .container h1,
+    .offer .container h3,
+    .offer .container h5{
+        display: none;
+    }
+    .offer .container h6{
+        font-size: 10px;
+    }
+    .offer .container h2{
+        font-size: 25px;
+    }
+    .offer .container p{
+        width: 90%;
+    }
 }
 
 /*=======gallery section=========*/
@@ -114,12 +145,12 @@ header nav .navbar-brand span{
 .layer span{
     color: white;
     font-size: 18px;
-    position: absolute;
-    top: 40%;
-    left: 30%;
+    font-family: 'Archivo Black', sans-serif;
 }
 [class*="image-"]:hover .layer{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -132,9 +163,11 @@ header nav .navbar-brand span{
 .aboutUs .container h5,
 .aboutUs .container h6{
     color: #3498db;
+    font-family: 'Archivo Black', sans-serif;
 }
 .aboutUs .container small{
     color: #2980b9;
+    font-family: 'Archivo Black', sans-serif;
 }
 .aboutUs .container p{
     color: lavender;
@@ -143,6 +176,19 @@ header nav .navbar-brand span{
     padding: 10px 10%;
     font-size: 18px;
     line-height: 1.4em;
+    font-family: 'Play', sans-serif;
+}
+@media (max-width: 767px){
+    .aboutUs .container h1,
+    .aboutUs .container h2{
+        display: none;
+    }
+    .aboutUs .container h3{
+        font-size: 30px;
+    }
+    .aboutUs .container p{
+        width: 90%;
+    }
 }
 
 /*=========hr=========*/
@@ -165,19 +211,18 @@ header nav .navbar-brand span{
 .contact .container .address{
     margin-bottom: 50px;
 }
-.contact .container .address h1,
-.contact .container .address h2,
-.contact .container .address h3,
-.contact .container .address h4,
-.contact .container .address h5,
-.contact .container .address h6{
+
+.contact .container .address h2{
     color: #27ae60;
+    font-size: 40px;
+    font-family: 'Archivo Black', sans-serif;
 }
 .contact .container .address p{
     color: lavender;
     font-size: 18px;
     line-height: 2em;
     padding: 20px 0;
+    font-family: 'Play', sans-serif;
 }
 .contact .container .wrapper{
     display: flex;
@@ -200,5 +245,11 @@ footer div{
 }
 footer span{
     color: lavender;
-    font-size: 16px;  
+    font-size: 18px;  
+    font-family: 'Play', sans-serif;
+}
+@media (max-width: 767px){
+    footer span{
+    font-size: 15px;  
+} 
 }
