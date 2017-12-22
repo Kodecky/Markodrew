@@ -113,14 +113,14 @@ header nav ul li a:hover{
 @media (max-width: 767px){
     .offer .container h1,
     .offer .container h3,
-    .offer .container h5{
+    .offer .container h4{
         display: none;
     }
     .offer .container h6{
         font-size: 10px;
     }
     .offer .container h2{
-        font-size: 25px;
+        font-size: 23px;
     }
     .offer .container p{
         width: 90%;
@@ -184,7 +184,16 @@ header nav ul li a:hover{
         display: none;
     }
     .aboutUs .container h3{
-        font-size: 30px;
+        font-size: 28px;
+    }
+    .aboutUs .container h4{
+        font-size: 16px;
+    }
+    .aboutUs .container h5{
+        font-size: 12px;
+    }
+    .aboutUs .container h6{
+        font-size: 9px;
     }
     .aboutUs .container p{
         width: 90%;
