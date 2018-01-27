@@ -11,13 +11,13 @@ body{
 }
 
 section{
-    margin-bottom: 70px;
+    margin-bottom: 150px;
 }
 
 /*========header========*/
 
 header nav .container-fluid{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -123,7 +123,6 @@ header nav ul li a:hover{
 
 /*========offer section==========*/
 
-.offer .container h1,
 .offer .container h2,
 .offer .container h3,
 .offer .container h4,
@@ -132,6 +131,9 @@ header nav ul li a:hover{
     color: #f1c40f;
     display: inline-block;
     font-family: 'Archivo Black', sans-serif;
+}
+.offer .container h2{
+    margin-bottom: 30px;
 }
 .offer .container p{
     color: lavender;
@@ -202,6 +204,9 @@ header nav ul li a:hover{
     color: #3498db;
     font-family: 'Archivo Black', sans-serif;
 }
+.aboutUs .container h1{
+    margin-bottom: 50px;
+}
 .aboutUs .container small{
     color: #2980b9;
     font-family: 'Archivo Black', sans-serif;
@@ -254,6 +259,9 @@ header nav ul li a:hover{
     
 /*=========contact section=========*/
 
+.contact{
+    margin-top: 100px;
+}
 .contact .container .address{
     margin-bottom: 50px;
 }
