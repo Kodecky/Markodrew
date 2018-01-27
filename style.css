@@ -163,6 +163,14 @@ header nav ul li a:hover{
 
 /*=======gallery section=========*/
 
+.gallery-section{
+    margin-bottom: 250px;
+}
+.gallery-info{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #A3CB38;
+}
 [class*="image-"]{
     position: relative;
 }
