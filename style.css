@@ -1,21 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Marketplace
-Explore
- @iTemat
- Sign out
- Watch 0
-  Star 0  Fork 0 iTemat/Markodrew
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-Branch: master Find file Copy pathMarkodrew/style.css
-6e81360  13 hours ago
-@iTemat iTemat Update styles
-1 contributor
-RawBlameHistory     
-318 lines (296 sloc)  5.62 KB
 *{
     box-sizing: border-box;
 }
@@ -181,14 +163,6 @@ header nav ul li a:hover{
 
 /*=======gallery section=========*/
 
-.gallery-section{
-    margin-bottom: 250px;
-}
-.gallery-info{
-    text-align: center;
-    margin-bottom: 50px;
-    color: #A3CB38;
-}
 [class*="image-"]{
     position: relative;
 }
@@ -331,5 +305,5 @@ footer span{
 @media (max-width: 767px){
     footer span{
     font-size: 13px;  
-    } 
+} 
 }
