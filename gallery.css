@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    /*background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);*/
+    background-image: url(background/wood-1759566_1920.jpg);
+}
+div{
+    border: thin solid white;
+}
+.container{
+    width: 90%;
+    height: 90vh;
+    margin: 50px auto;
+}

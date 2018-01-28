@@ -10,20 +10,25 @@ body{
     background-image: url(background/wood-1759566_1920.jpg);
 }
 
+.horizontal{
+    width: 150px;
+    margin: 0 auto;
+    border-bottom: thin solid lavender;
+}
 .vertical{
     height: 250px;
     margin-left: 50%;
     border-left: thin dotted lavender;
 }
-.number{
-    border: thin dotted lavender;
+.icon{
+    border: thin solid lavender;
     border-radius: 50%;
     text-align: center;
     color: #f1c40f;
     font-family: 'Merienda', sans-serif;
-    font-size: 25px;
-    width: 50px;
-    padding: 10px;
+    font-size: 30px;
+    width: 70px;
+    padding: 15px;
     margin: 0 auto;
 }
 
@@ -125,6 +130,9 @@ header nav ul li a:hover{
     font-weight: 400;
 }
 @media (max-width: 767px){
+    .carousel{
+        padding: 80px 0;
+    }
     [class*="slogan-"]{
         font-size: 45px;
     }
