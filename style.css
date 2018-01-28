@@ -144,7 +144,8 @@ header nav ul li a:hover{
 }
 @media (max-width: 767px){
     .carousel{
-        padding: 60px 0 100px 0;
+        margin-top: 60px;
+        margin-bottom: 120px;
     }
     [class*="slogan-"]{
         font-size: 45px;
