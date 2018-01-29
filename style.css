@@ -145,7 +145,7 @@ header nav ul li a:hover{
 @media (max-width: 767px){
     .carousel{
         margin-top: 60px;
-        margin-bottom: 120px;
+        margin-bottom: 200px;
     }
     [class*="slogan-"]{
         font-size: 45px;
@@ -181,6 +181,9 @@ header nav ul li a:hover{
     font-family: 'Play', sans-serif;
 }
 @media (max-width: 767px){
+    .offer .container{
+        padding: 10px 0;
+    }
     .offer .container h1,
     .offer .container h3,
     .offer .container h4{
@@ -204,10 +207,10 @@ header nav ul li a:hover{
 }
 .info{
     display: block;
-    text-align: center;
+    text-align: right;
     color: lavender;
     font-family: 'Merienda', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 [class*="image-"]{
     position: relative;
@@ -234,6 +237,9 @@ header nav ul li a:hover{
     align-items: center;
 }
 @media (max-width: 767px){
+    .mini-gallery{
+        padding: 20px 0;
+    }
     .layer span{
         font-size: 25px;
     }
@@ -271,6 +277,9 @@ header nav ul li a:hover{
     font-family: 'Play', sans-serif;
 }
 @media (max-width: 767px){
+    .aboutUs .container{
+        padding: 10px 0;
+    }
     .aboutUs .container h1,
     .aboutUs .container h2{
         display: none;
@@ -331,6 +340,11 @@ header nav ul li a:hover{
 .contact .container .wrapper{
     display: flex;
     justify-content: center;
+}
+@media (max-width: 767px){
+    .contact{
+        padding: 10px 0;
+    }
 }
 
 /*==========footer=========*/
