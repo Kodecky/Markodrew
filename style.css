@@ -240,6 +240,9 @@ header nav ul li a:hover{
     .mini-gallery{
         padding: 20px 0;
     }
+    .info{
+        font-size: 14px;
+    }
     .layer span{
         font-size: 25px;
     }
