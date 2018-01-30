@@ -23,16 +23,16 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="#">Galeria</a>
+                            <a class="js-galleryLink" href="#js-miniGallery">Galeria</a>
                         </li>
                         <li>
-                            <a href="#">O nas</a>
+                            <a class="js-aboutUsLink" href="#js-aboutUs">O nas</a>
                         </li>
                         <li>
-                            <a href="#">Oferta</a>
+                            <a class="js-offerLink" href="#js-offer">Oferta</a>
                         </li>
                         <li>
-                            <a href="#">Kontakt</a>
+                            <a class="ja-contactLink" href="#js-contact">Kontakt</a>
                         </li>
                     </ul>
                 </div>
@@ -41,10 +41,10 @@
                         <span class="glyphicon glyphicon-menu-hamburger"></span>
                       </button>
                       <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Oferta</a></li>
-                        <li><a href="#">Galeria</a></li>
-                        <li><a href="#">O nas</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                        <li><a class="js-offerLink" href="#js-offer">Oferta</a></li>
+                        <li><a class="js-galleryLink" href="#js-miniGallery">Galeria</a></li>
+                        <li><a class="js-aboutUsLink" href="#js-aboutUs">O nas</a></li>
+                        <li><a class="ja-contactLink" href="#js-contact">Kontakt</a></li>
                       </ul>
                 </div>
            </div>
@@ -120,7 +120,7 @@
     <div class="icon">
         <i class="fa fa-handshake-o"></i>
     </div>
-    <section class="offer">
+    <section id="js-offer" class="offer">
         <div class="container text-center">
             <h6>Nasza oferta</h6>
             <h5>Nasza oferta</h5>
@@ -138,7 +138,7 @@
     <div class="icon">
         <i class="fa fa-camera"></i>
     </div>
-    <section class="mini-gallery">
+    <section id="js-miniGallery" class="mini-gallery">
         <div class="container">
            <span class="info">Kliknij miniaturkę by przejść do pełnej galerii.</span>
             <div class="row">
@@ -174,7 +174,7 @@
     <div class="icon">
         <i class="fa fa-id-card"></i>
     </div>
-    <section class="aboutUs">
+    <section id="js-aboutUs" class="aboutUs">
         <div class="container text-center">
             <h6>Stolarnia Markodrew <small>  Kilka słów o nas...</small></h6>
             <h5>Stolarnia Markodrew <small>  Kilka słów o nas...</small></h5>
@@ -194,7 +194,7 @@
     <div class="icon">
         <i class="fa fa-envelope"></i>
     </div>
-    <section class="contact">
+    <section id="js-contact" class="contact">
         <div class="container">
             <div class="address text-center">
                 <h2>Markodrew</h2>
@@ -214,8 +214,9 @@
             <span>&copy; <b> Markodrew </b> 2015 - Zbudujemy Twoje schody do nieba!</span>
         </div>
     </footer>
-    <script src="https://use.fontawesome.com/e2fa62654a.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/e2fa62654a.js"></script>
 </body>
 </html>
