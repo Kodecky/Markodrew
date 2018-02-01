@@ -1,7 +1,13 @@
-/*$(function(){
-    var galleryScroll = $('js-gallery');
+$(function () {
     
-    galleryScroll.animate({"HTMLBodyElement": '.mini-gallery'}, 500, goToGallery);
-    
-    
-});*/
+    $('a[href^="#"]').on('click', function (event) {
+        var target = $($(this).attr('href'));
+
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+});
