@@ -216,6 +216,9 @@ header nav ul li a:hover{
     position: relative;
     margin-top: 50px;
 }
+[class*="image-"] img{
+    border-radius: 15px;   
+}
 .layer{
     width: 100%;
     height: 100%;
