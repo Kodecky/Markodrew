@@ -7,3 +7,40 @@ body{
     /*background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);*/
     background-image: url(background/wood-1759566_1920.jpg);
 }
+header .container-fluid{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+header .navbar-brand span{
+    font-size: 30px;
+    font-family: 'Merienda', cursive;
+    color: #9d9d9d;
+}
+header .navbar-brand span:hover{
+    color: white;
+}
+.photo-viewer{
+    position: relative;
+    min-height: 450px;
+    overflow: hidden;
+}
+.thumbnails{
+    text-align: center;
+}
+.photo-viewer.is-loading:after{
+    /*content: ;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.photo-viewer img{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+}
+a.active{
+    opacity: 0.5;    
+}
