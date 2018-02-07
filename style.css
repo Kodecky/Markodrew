@@ -205,6 +205,9 @@ header nav ul li a:hover{
 .mini-gallery{
     padding: 100px 0;
 }
+.mini-gallery .row{
+    margin: 0;
+}
 .info{
     display: block;
     text-align: right;
@@ -212,13 +215,69 @@ header nav ul li a:hover{
     font-family: 'Merienda', sans-serif;
     font-size: 18px;
 }
-[class*="image-"]{
+.mini-gallery [class*="image-"]{
     position: relative;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
+    min-height: 170px;
 }
-[class*="image-"] img{
+.mini-gallery .image-1{
+    background-image: url(mini-gallery/obraz2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.mini-gallery .image-2{
+    background-image: url(mini-gallery/obraz7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.mini-gallery .image-3{
+    background-image: url(mini-gallery/obraz16.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.mini-gallery .image-4{
+    background-image: url(mini-gallery/obraz21.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.mini-gallery .image-5{
+    background-image: url(mini-gallery/obraz24.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.mini-gallery .image-6{
+    background-image: url(mini-gallery/obraz25.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.mini-gallery .image-7{
+    background-image: url(mini-gallery/obraz37.jpg);
+    background-size: cover;
+    background-position: 60% 20%;
+}
+.mini-gallery .image-8{
+    background-image: url(mini-gallery/obraz50.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.mini-gallery .image-9{
+    background-image: url(mini-gallery/obraz55.jpg);
+    background-size: cover;
+    background-position: 60% 65%;
+}
+.mini-gallery .image-10{
+    background-image: url(mini-gallery/obraz62.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.mini-gallery .image-11{
+    background-image: url(mini-gallery/obraz69.jpg);
+    background-size: cover;
+    background-position: 100% 100%;
+}
+/*[class*="image-"] img{
     border-radius: 15px;   
-}
+}*/
 .layer{
     width: 100%;
     height: 100%;
@@ -228,11 +287,24 @@ header nav ul li a:hover{
     top: 0;
     display: none;
     cursor: pointer;
+}.layer a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
-.layer span{
+
+/*.layer span{
     color: white;
     font-size: 18px;
     font-family: 'Merienda', sans-serif;
+}*/
+.layer i{
+    color: lightgray;
+    font-size: 30px;
 }
 [class*="image-"]:hover .layer{
     display: flex;
@@ -246,9 +318,9 @@ header nav ul li a:hover{
     .info{
         font-size: 14px;
     }
-    .layer span{
-        font-size: 25px;
-    }
+    /*.layer span{
+        font-size: 16px;
+    }*/
 }
 
 
