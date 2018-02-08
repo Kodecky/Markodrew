@@ -58,17 +58,43 @@ header nav ul li a:hover{
 header .navbar-brand span:hover{
     color: white;
 }
+.dropdown{
+    display: none;
+    float: right;
+    margin-top: 10px;
+}
+.dropdown .dropdown-menu{
+    background-color: #888;
+}
+.dropdown .dropdown-menu li{
+    text-align: center;
+}
+.dropdown .dropdown-menu li a{
+    transition: .1s; 
+    border-radius: 5px;
+}
+.dropdown .dropdown-menu li a:hover{
+    color: white;
+    background-color: #333;
+}
 @media (max-width: 767px){
     .navbar-header{
         display: inline-block;
+    }
+    .dropdown{
+        display: inline-block;
+    }
+    .dropdown a:hover{
+        transform: scale(0.9);
+    }
+    /*===gallery.html only=====*/
+    .navigate-brand{
+        display: inline-block;
         float: left;
     }
-    .navbar-right{
+    .navigate-link{
         display: inline-block;
         float: right;
-    }
-    .navbar-right li{
-        display: inline-block;
     }
 }
 
@@ -167,6 +193,14 @@ header .navbar-brand span:hover{
     background-image: url(photo/obraz66.jpg);
     background-position: center;
     background-size: cover;
+}
+@media (max-width: 767px){
+    .projects .wrapper [class*='col-md']{
+        min-height: 200px;
+    }
+    .projects [class*='projects-item']{
+        height: 200px;
+    }
 }
 
 /*======gallery[number].html/gallery======*/
