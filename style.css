@@ -247,6 +247,7 @@ header nav ul li a:hover{
     position: relative;
     /*margin-top: 50px;*/
     min-height: 150px;
+    border: 1px solid black;
 }
 .mini-gallery .image-1{
     background-image: url(mini-gallery/obraz2.jpg);
