@@ -10,4 +10,9 @@ $(function () {
             }, 2000);
         }
     });
+    
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {$('.scroll-up').fadeIn();}
+        else $('.scroll-up').fadeOut();
+    });
 });

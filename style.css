@@ -4,12 +4,32 @@
 body{
     margin: 0;
     padding: 0;
-    padding-top: 100px;
+    padding-top: 80px;
     background-color: lightslategray !important;
     /*background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);*/
     background-image: url(background/wood-1759566_1920.jpg);
 }
 
+.scroll-up{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+    background-color: rgba(66, 179, 244, 0.5);
+    text-align: center;
+    display: none;
+}
+.scroll-up a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.scroll-up i{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 55px;
+}
 .horizontal{
     width: 150px;
     margin: 0 auto;
@@ -213,12 +233,20 @@ header nav ul li a:hover{
     text-align: right;
     color: lavender;
     font-family: 'Merienda', sans-serif;
-    font-size: 18px;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.info a{
+    text-decoration: none;
+    color: #badc58;
+}
+.info a:hover{
+    color: #6ab04c;
 }
 .mini-gallery [class*="image-"]{
     position: relative;
     /*margin-top: 50px;*/
-    min-height: 170px;
+    min-height: 150px;
 }
 .mini-gallery .image-1{
     background-image: url(mini-gallery/obraz2.jpg);
@@ -241,7 +269,7 @@ header nav ul li a:hover{
     background-position: center;
 }
 .mini-gallery .image-5{
-    background-image: url(mini-gallery/obraz24.jpg);
+    background-image: url(mini-gallery/obraz22.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -261,17 +289,17 @@ header nav ul li a:hover{
     background-position: center;
 }
 .mini-gallery .image-9{
-    background-image: url(mini-gallery/obraz55.jpg);
+    background-image: url(mini-gallery/obraz54.jpg);
     background-size: cover;
     background-position: 60% 65%;
 }
 .mini-gallery .image-10{
-    background-image: url(mini-gallery/obraz62.jpg);
+    background-image: url(mini-gallery/obraz64.jpg);
     background-size: cover;
     background-position: center;
 }
 .mini-gallery .image-11{
-    background-image: url(mini-gallery/obraz69.jpg);
+    background-image: url(mini-gallery/obraz65.jpg);
     background-size: cover;
     background-position: 100% 100%;
 }
@@ -414,6 +442,13 @@ header nav ul li a:hover{
     line-height: 2em;
     padding: 10px 0;
     font-family: 'Play', sans-serif;
+}
+.contact .container .address p a{
+    text-decoration: none;
+    color: #badc58;
+}
+.contact .container .address p a:hover{
+    color: #6ab04c;
 }
 .contact .container .wrapper{
     display: flex;

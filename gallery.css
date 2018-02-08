@@ -8,6 +8,33 @@ body{
     background-image: url(background/wood-1759566_1920.jpg);
 }
 
+.scroll-up{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    background-color: rgba(66, 179, 244, 0.5);
+    text-align: center;
+    display: none;
+}
+.scroll-up:hover{
+    background-color: rgba(66, 179, 244, 0.8);
+}
+.scroll-up:hover i{
+    color: rgba(255, 255, 255, 0.8);
+}
+.scroll-up a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.scroll-up i{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 55px;
+}
+
 /*======header======*/
 
 header .container-fluid{
@@ -20,13 +47,29 @@ header .navbar-brand span{
     font-family: 'Merienda', cursive;
     color: #9d9d9d;
 }
+header nav ul li a{
+    font-size: 18px;
+    font-family: 'Play', sans-serif;
+    transition: .5s;
+}
+header nav ul li a:hover{
+    transform: scale(1.2);
+}
 header .navbar-brand span:hover{
     color: white;
 }
-header .dropdown{
-    display: none;
-    float: right;
-    margin-top: 10px;
+@media (max-width: 767px){
+    .navbar-header{
+        display: inline-block;
+        float: left;
+    }
+    .navbar-right{
+        display: inline-block;
+        float: right;
+    }
+    .navbar-right li{
+        display: inline-block;
+    }
 }
 
 /*======gallery.html/projects section====*/
@@ -36,11 +79,15 @@ header .dropdown{
 }
 .projects .row{
     margin: 0;
-    margin-top: 50px;
     width: 100%;
+}
+.projects .row:first-child{
+    margin-top: 30px;
 }
 .projects p{
     color: white;
+    font-family: 'Merienda', sans-serif;
+    font-size: 16px;
 }
 .projects .wrapper [class*='col-md']{
     min-height: 400px;
@@ -48,6 +95,23 @@ header .dropdown{
 .projects [class*='projects-item']{
     height: 300px;
     border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    transition: .5s;
+}
+.projects [class*='projects-item']:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.projects .item-layer{
+    background-color: rgba(45, 45, 45, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display: none;
+}
+.projects [class*='projects-item']:hover .item-layer{
+    display: block;
 }
 .projects .projects-item-1{
     background-image: url(photo/obraz1.jpg);
@@ -117,6 +181,7 @@ header .dropdown{
 }
 .photo-viewer img{
     margin-top: -270px !important;
+    border-radius: 15px;
 }
 .thumbnails{
     text-align: center;
@@ -142,13 +207,36 @@ a.active{
     opacity: 0.4;    
 }
 
+/*======mobile gallery======*/
+
+.mobile{
+    display: none;
+}
+@media (max-width: 767px){
+    .mobile{
+        display: block;
+        text-align: center;
+    }
+    .mobile .container{
+        text-align: center;
+    }
+    .mobile .container img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .desk{
+        display: none;
+    }
+}
+
+
 /*==========footer=========*/
 
 footer{
     background-color: #222;
     height: 80px;
     display: flex; 
-    margin-top: 50px;
+    margin-top: 30px;
 }
 footer div{
     width: 100%;
