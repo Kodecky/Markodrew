@@ -33,18 +33,18 @@ body{
 .horizontal{
     width: 150px;
     margin: 0 auto;
-    border-bottom: thin solid lavender;
+    border-bottom: thin solid rgba(255, 255, 255, 0.5);
 }
 .vertical{
     height: 250px;
     margin-left: 50%;
-    border-left: thin dotted lavender;
+    border-left: thin dotted rgba(255, 255, 255, 0.5);
 }
 .icon{
-    border: thin solid lavender;
+    border: thin solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     text-align: center;
-    color: #f1c40f;
+    color: rgba(255, 229, 2, 0.5);
     font-family: 'Merienda', sans-serif;
     font-size: 30px;
     width: 70px;
