@@ -358,11 +358,11 @@ header nav ul li a:hover{
         font-size: 14px;
     }
     .mini-gallery [class*="image-"]{
-        min-height: 155px;
+        min-height: 150px;
     }
     .mini-gallery .image-7,
     .mini-gallery .image-8{
-        min-height: 170px;
+        min-height: 160px;
     }
 }
 
