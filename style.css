@@ -254,7 +254,7 @@ header nav ul li a:hover{
 .mini-gallery [class*="image-"]{
     position: relative;
     /*margin-top: 50px;*/
-    min-height: 170px;
+    min-height: 160px;
     border: 1px solid black;
 }
 .mini-gallery .image-1{
@@ -291,13 +291,13 @@ header nav ul li a:hover{
     background-image: url(mini-gallery/obraz37.jpg);
     background-size: cover;
     background-position: 60% 20%;
-    min-height: 200px;
+    min-height: 180px;
 }
 .mini-gallery .image-8{
     background-image: url(mini-gallery/obraz50.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 200px;
+    min-height: 180px;
 }
 .mini-gallery .image-9{
     background-image: url(mini-gallery/obraz54.jpg);
