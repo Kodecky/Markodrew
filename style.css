@@ -360,9 +360,33 @@ header nav ul li a:hover{
     .mini-gallery [class*="image-"]{
         min-height: 120px;
     }
-    .mini-gallery .image-7,
+    .mini-gallery .image-1{
+        background-position: 40% 50%;
+    }
+    .mini-gallery .image-2{
+        background-position: 55% 35%;
+    }
+    .mini-gallery .image-3{
+        background-position: 40% 45%;
+    }
+    .mini-gallery .image-4{
+        background-position: 68% 55%;
+    }
+    .mini-gallery .image-7{
+        min-height: 125px;
+        background-position: 70% 50%;
+    }
     .mini-gallery .image-8{
         min-height: 125px;
+    }
+    .mini-gallery .image-9{
+        background-position: 35% 60%;
+    }
+    .mini-gallery .image-10{
+        background-position: 43% 50%;
+    }
+    .mini-gallery .image-11{
+        background-position: 48% 50%;
     }
 }
 
