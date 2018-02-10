@@ -17,6 +17,7 @@ body{
     bottom: 30px;
     background-color: rgba(66, 179, 244, 0.5);
     text-align: center;
+    z-index: 100;
     display: none;
 }
 .scroll-up:hover{
@@ -33,6 +34,12 @@ body{
 .scroll-up i{
     color: rgba(255, 255, 255, 0.5);
     font-size: 55px;
+}
+@media (max-width: 767px){
+    .scroll-up{
+        right: 10px;
+        bottom: 50px;
+    }
 }
 
 /*======header======*/
@@ -107,13 +114,17 @@ header .navbar-brand span:hover{
     margin: 0;
     width: 100%;
 }
-.projects .row:first-child{
-    margin-top: 30px;
-}
+/*.projects .row:first-child{
+}*/
 .projects p{
     color: white;
     font-family: 'Merienda', sans-serif;
     font-size: 16px;
+}
+.projects .wrapper{
+    margin-top: 80px;
+    background-color: rgba(20, 20, 20, 0.8);
+    border-radius: 20px;
 }
 .projects .wrapper [class*='col-md']{
     min-height: 400px;
