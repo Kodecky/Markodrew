@@ -254,7 +254,7 @@ header nav ul li a:hover{
 .mini-gallery [class*="image-"]{
     position: relative;
     /*margin-top: 50px;*/
-    min-height: 160px;
+    min-height: 180px;
     border: 1px solid black;
 }
 .mini-gallery .image-1{
@@ -291,13 +291,13 @@ header nav ul li a:hover{
     background-image: url(mini-gallery/obraz37.jpg);
     background-size: cover;
     background-position: 60% 20%;
-    min-height: 180px;
+    min-height: 200px;
 }
 .mini-gallery .image-8{
     background-image: url(mini-gallery/obraz50.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 180px;
+    min-height: 200px;
 }
 .mini-gallery .image-9{
     background-image: url(mini-gallery/obraz54.jpg);
@@ -357,9 +357,13 @@ header nav ul li a:hover{
     .info{
         font-size: 14px;
     }
-    /*.layer span{
-        font-size: 16px;
-    }*/
+    .mini-gallery [class*="image-"]{
+        min-height: 155px;
+    }
+    .mini-gallery .image-7,
+    .mini-gallery .image-8{
+        min-height: 170px;
+    }
 }
 
 
@@ -438,7 +442,7 @@ header nav ul li a:hover{
 /*=========contact section=========*/
 
 .contact .container{
-    padding: 10px 0 50px 0;
+    padding: 80px 0;
     background-color: rgba(20, 20, 20 , 0.8);
     border-radius: 20px;
 }
