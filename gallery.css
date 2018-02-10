@@ -131,6 +131,7 @@ header .navbar-brand span:hover{
 }
 .projects [class*='projects-item']{
     height: 300px;
+    border: 1px solid white;
     border-radius: 15px;
     margin-top: 50px;
     margin-bottom: 15px;
