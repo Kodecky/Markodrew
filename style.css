@@ -21,7 +21,12 @@ body{
     bottom: 50px;
     background-color: rgba(66, 179, 244, 0.5);
     text-align: center;
+    z-index: 10;
+    transition: .3s ease all;
     display: none;
+}
+.scroll-up:hover{
+    background-color: rgba(66, 179, 244, 0.7);
 }
 .scroll-up a{
     display: block;
@@ -171,7 +176,7 @@ header nav ul li a:hover{
 @media (max-width: 767px){
     .carousel{
         margin-top: 60px;
-        margin-bottom: 200px;
+        margin-bottom: 40px;
     }
     [class*="slogan-"]{
         font-size: 45px;
