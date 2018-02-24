@@ -139,7 +139,7 @@ header .navbar-brand span:hover{
     transition: .5s;
 }
 .projects [class*='projects-item']:hover{
-    transform: scale(0.9);
+    transform: scale(0.95);
     cursor: pointer;
     box-shadow: 6px 6px 10px black;
 }
