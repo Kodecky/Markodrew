@@ -10,7 +10,7 @@ body{
     background-image: url(background/wood-1759566_1920.jpg);
 }
 
-/*====global styles====*/
+/*====globals====*/
 
 .scroll-up{
     width: 60px;
@@ -133,6 +133,10 @@ header nav ul li a:hover{
     max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 60px;
+    box-shadow: 12px 12px 15px #000;
+}
+.carousel-inner{
+    border-radius: 10px;
 }
 .item{
     position: relative;
