@@ -101,7 +101,8 @@ header nav ul li a:hover{
     margin-top: 10px;
 }
 .dropdown .dropdown-menu{
-    background-color: #888;
+    background-color: rgba(0, 163, 204, 0.9)/*rgba(159, 190, 223, 0.9)*/;
+    width: 150px;
 }
 .dropdown .dropdown-menu li{
     text-align: center;
@@ -109,10 +110,11 @@ header nav ul li a:hover{
 .dropdown .dropdown-menu li a{
     transition: .1s; 
     border-radius: 5px;
+    color: rgb(13, 25, 38);
 }
 .dropdown .dropdown-menu li a:hover{
     color: white;
-    background-color: #333;
+    background-color: rgb(39, 75, 114);
 }
 @media (max-width: 767px){
     .navbar-header{
@@ -133,7 +135,7 @@ header nav ul li a:hover{
     max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 60px;
-    box-shadow: 12px 12px 15px #000;
+    box-shadow: 15px 15px 12px rgba(0, 0, 0, 0.7);
 }
 .carousel-inner{
     border-radius: 10px;
@@ -181,6 +183,7 @@ header nav ul li a:hover{
     .carousel{
         margin-top: 75px;
         margin-bottom: 75px;
+        box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.7);
     }
     [class*="slogan-"]{
         font-size: 45px;
