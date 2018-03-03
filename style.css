@@ -244,6 +244,7 @@ header nav ul li a:hover{
 
 .mini-gallery{
     padding: 100px 0;
+    max-width: 1200px;
 }
 .mini-gallery .row{
     margin: 0;
