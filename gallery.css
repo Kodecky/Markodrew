@@ -114,8 +114,6 @@ header .navbar-brand span:hover{
     margin: 0;
     width: 100%;
 }
-/*.projects .row:first-child{
-}*/
 .projects p{
     color: white;
     font-family: 'Merienda', sans-serif;
@@ -223,7 +221,7 @@ header .navbar-brand span:hover{
 /*======gallery[number].html/gallery======*/
 
 .gallery{
-    height: 100vh;
+    height: 100%;
 }
 .photo-viewer{
     position: relative;
@@ -256,6 +254,11 @@ header .navbar-brand span:hover{
 }
 a.active{
     opacity: 0.4;    
+}
+@media (max-width: 960px){
+    .gallery{
+        margin-top: 10vh;    
+    }
 }
 
 /*======mobile gallery======*/
@@ -301,8 +304,24 @@ footer span{
     font-size: 18px;  
     font-family: 'Play', sans-serif;
 }
+@media (max-width: 960px){
+    footer{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }   
+    @media (max-height: 680px){
+        footer{
+            position: static;
+        }
+    }
+}
 @media (max-width: 767px){
+    footer{
+        position: static;
+    }
     footer span{
-    font-size: 13px;  
-} 
+        font-size: 13px;  
+    }
 }
