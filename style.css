@@ -459,21 +459,6 @@ header nav ul li a:hover{
         width: 90%;
     }
 }
-
-/*=========hr=========*/
-
-/*.horizontal-up{
-    width: 55%;
-    margin-left: 15%;
-}
-.horizontal-mid{
-    width: 40%;
-    margin-left: 40%;
-}
-.horizontal-down{
-    width: 30%;
-    margin-left: 25%;
-}*/
     
 /*=========contact section=========*/
 
@@ -526,7 +511,6 @@ footer{
     background-color: #222;
     height: 80px;
     display: flex;  
-    margin-top: 50px;
 }
 footer div{
     width: 100%;
