@@ -102,7 +102,7 @@ header nav ul li a:hover{
 }
 .dropdown .dropdown-menu{
     background-color: rgba(159, 190, 223, 0.9);
-    width: 200px;
+    width: 350px;
 }
 .dropdown .dropdown-menu li{
     text-align: center;
@@ -251,20 +251,24 @@ header nav ul li a:hover{
 .mini-gallery .row{
     margin: 0;
 }
-.info{
-    display: block;
+.mini-gallery .container{
     text-align: center;
-    color: lavender;
-    font-family: 'Merienda', sans-serif;
-    font-size: 22px;
-    margin-bottom: 30px;
 }
-.info a{
-    text-decoration: none;
-    color: #badc58;
+.info{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #badc58;
+    color: black;
+    margin-bottom: 50px;
+    border:4px solid black;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.7);
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    transition: .5s;
 }
-.info a:hover{
-    color: #6ab04c;
+.info:hover{
+    background-color: #6ab04c;
 }
 .mini-gallery [class*="image-"]{
     position: relative;
@@ -375,7 +379,8 @@ header nav ul li a:hover{
         padding: 20px 0;
     }
     .info{
-        font-size: 14px;
+        width: 200px;
+        margin-bottom: 30px;
     }
     .mini-gallery [class*="image-"]{
         min-height: 120px;
