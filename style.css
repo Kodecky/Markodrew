@@ -144,6 +144,12 @@ header nav ul li a:hover{
     margin: 0 auto;
     margin-bottom: 60px;
     box-shadow: 15px 15px 12px rgba(0, 0, 0, 0.7);
+    animation-name: appear;
+    animation-duration: 3s;
+}
+@keyframes appear{
+    from {opacity: 0.0;}
+    to {opacity: 1;}
 }
 .carousel-inner{
     border-radius: 10px;
@@ -208,6 +214,12 @@ header nav ul li a:hover{
     padding: 80px 0;
     background-color: rgba(20, 20, 20 , 0.5);
     border-radius: 20px;
+    animation-name: appear;
+    animation-duration: 3s;
+}
+@keyframes appear{
+    from {opacity: 0.0;}
+    to {opacity: 1;}
 }
 .offer .container h2,
 .offer .container h3,
