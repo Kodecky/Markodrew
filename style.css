@@ -145,7 +145,7 @@ header nav ul li a:hover{
     margin-bottom: 60px;
     box-shadow: 15px 15px 12px rgba(0, 0, 0, 0.7);
     animation-name: appear;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 @keyframes appear{
     from {opacity: 0.0;}
@@ -215,7 +215,7 @@ header nav ul li a:hover{
     background-color: rgba(20, 20, 20 , 0.5);
     border-radius: 20px;
     animation-name: appear;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 @keyframes appear{
     from {opacity: 0.0;}
