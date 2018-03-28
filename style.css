@@ -38,22 +38,25 @@ body{
     display: block;
     text-align: center;
     color: #f1c40f;
-    font-size: 65px;
-    font-family: 'Amita', cursive;
+    font-size: 70px;
+    font-family: 'Devonshire', cursive;
+    letter-spacing: 1px;
 }
 .open-section h3{
     display: block;
-    text-align: right;
+    text-align: center;
     color: #f1c40f;
-    font-size: 40px;
-    font-family: 'Amita', cursive;
+    font-size: 50px;
+    font-family: 'Devonshire', cursive;
+    letter-spacing: 1px;
 }
 .open-section h4{
     display: block;
     text-align: center;
     color: #f1c40f;
     font-size: 35px;
-    font-family: 'Amita', cursive; 
+    font-family: 'Devonshire', cursive;
+    letter-spacing: 1px;
 }
 .open-section span{
     position: fixed;
@@ -68,13 +71,13 @@ body{
         width: 100%;
     }
     .open-section h1{
-        font-size: 45px;
+        font-size: 55px;
         margin-bottom: 35px;
         margin-top: 0;
         text-align: center;
     }
     .open-section h3{
-        font-size: 20px;
+        font-size: 30px;
         text-align: center;
     }
     .open-section span{
