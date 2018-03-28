@@ -55,12 +55,12 @@ body{
         width: 100%;
     }
     .open-section h1{
-        font-size: 35px;
+        font-size: 45px;
         margin-bottom: 30px;
         text-align: center;
     }
     .open-section h3{
-        font-size: 17px;
+        font-size: 20px;
         text-align: center;
     }
 }
