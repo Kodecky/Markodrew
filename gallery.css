@@ -279,7 +279,11 @@ a.active{
 .mobile{
     display: none;
     animation-name: appear;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
+}
+@keyframes appear{
+    from {opacity: 0.0;}
+    to {opacity: 1;}
 }
 @media (max-width: 767px){
     .mobile{

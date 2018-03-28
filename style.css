@@ -52,7 +52,7 @@ body{
 }
 @media (max-width: 767px){
     .open-section .container{
-        width: 90%;
+        width: 100%;
     }
     .open-section h1{
         font-size: 35px;
@@ -60,7 +60,7 @@ body{
         text-align: center;
     }
     .open-section h3{
-        font-size: 18px;
+        font-size: 17px;
         text-align: center;
     }
 }
