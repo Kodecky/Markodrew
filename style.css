@@ -4,10 +4,70 @@
 body{
     margin: 0;
     padding: 0;
-    padding-top: 80px;
+    /*padding-top: 80px;
     background-color: lightslategray !important;
     /*background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);*/
     background-image: url(background/wood-1759566_1920.jpg);
+}
+
+/*========open section=========*/
+
+.open{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/122588/pexels-photo-122588.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.open .layer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 40, 40, 0.5);
+}
+.open .container{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 30px;
+}
+.open h1{
+    display: block;
+    text-align: left;
+    color: #f1c40f;
+    font-size: 40px;
+    font-family: 'Merienda', cursive;
+    margin: 0;
+}
+.open h3{
+    display: block;
+    text-align: right;
+    color: #f1c40f;
+    font-size: 22px;
+    font-family: 'Merienda', cursive;
+    margin-top: 0;
+}
+.open button{
+    display: block;
+    margin: auto;
+    padding: 0px 30px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-family: 'Archivo', sans-serif;
+    font-size: 22px;
+    transition: .5s;
+}
+.open button:hover{
+    background-color: #2980b9;
+}
+.main{
+    display: none;
 }
 
 /*====globals====*/
@@ -142,15 +202,16 @@ header nav ul li a:hover{
 .carousel{
     max-width: 1000px;
     margin: 0 auto;
+    padding-top: 80px;
     margin-bottom: 60px;
     box-shadow: 15px 15px 12px rgba(0, 0, 0, 0.7);
-    animation-name: appear;
-    animation-duration: 2s;
+    /*animation-name: appear;
+    animation-duration: 2s;*/
 }
-@keyframes appear{
+/*@keyframes appear{
     from {opacity: 0.0;}
     to {opacity: 1;}
-}
+}*/
 .carousel-inner{
     border-radius: 10px;
 }

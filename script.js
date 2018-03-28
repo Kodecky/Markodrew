@@ -15,4 +15,9 @@ $(function () {
         if ($(this).scrollTop() > 300) {$('.scroll-up').fadeIn();}
         else $('.scroll-up').fadeOut();
     });
+    
+    $("#enter-js").click(function(){
+        $("#open-js").fadeOut("500");
+        $("#main-js").fadeIn("1300");
+    }); 
 });
