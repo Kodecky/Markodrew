@@ -39,24 +39,22 @@ body{
     text-align: center;
     color: #f1c40f;
     font-size: 60px;
-    font-family: 'Fondamento', cursive;
-    letter-spacing: 1px;
+    font-family: 'Courgette', cursive;
+    margin-top: 0;
 }
 .open-section h3{
     display: block;
-    text-align: right;
+    text-align: center;
     color: #f1c40f;
     font-size: 30px;
-    font-family: 'Fondamento', cursive;
-    letter-spacing: 1px;
+    font-family: 'Courgette', cursive;
 }
 .open-section h4{
     display: block;
     text-align: center;
     color: #f1c40f;
-    font-size: 25px;
-    font-family: 'Fondamento', cursive;
-    letter-spacing: 1px;
+    font-size: 22px;
+    font-family: 'Courgette', cursive;
 }
 .open-section span{
     position: fixed;
@@ -72,12 +70,12 @@ body{
     }
     .open-section h1{
         font-size: 45px;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
         margin-top: 0;
         text-align: center;
     }
     .open-section h3{
-        font-size: 20px;
+        font-size: 25px;
         text-align: center;
     }
     .open-section span{
