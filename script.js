@@ -16,11 +16,6 @@ $(function () {
         else $('.scroll-up').fadeOut();
     });
     
-    /*$("#enter-js").click(function(){
-        $("#open-js").fadeOut("500");
-        $("#main-js").fadeIn("1300");
-    }); */
-    
     $('#open-js').delay(2500).fadeOut(500);
     $('#main-js').delay(2500).fadeIn(1300);
     
