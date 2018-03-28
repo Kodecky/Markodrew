@@ -230,7 +230,7 @@ header .navbar-brand span:hover{
 .gallery{
     height: 100%;
     animation-name: appear;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
 }
 @keyframes appear{
     from {opacity: 0.0;}
@@ -279,7 +279,7 @@ a.active{
 .mobile{
     display: none;
     animation-name: appear;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
 }
 @media (max-width: 767px){
     .mobile{
