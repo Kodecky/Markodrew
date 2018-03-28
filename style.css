@@ -58,7 +58,8 @@ body{
 .open-section span{
     position: fixed;
     right: 20px;
-    bottom: 30px;
+    bottom: 15px;
+    font-size: 14px;
     font-family: 'Merienda', cursive;
     color: #f1c40f;
 }
@@ -75,6 +76,9 @@ body{
     .open-section h3{
         font-size: 20px;
         text-align: center;
+    }
+    .open-section span{
+        font-size: 12px;
     }
 }
 .main{
