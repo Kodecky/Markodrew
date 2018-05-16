@@ -640,6 +640,10 @@ footer span{
     font-family: 'Play', sans-serif;
 }
 @media (max-width: 767px){
+    footer{
+        position: sticky;
+        bottom: 0;
+    }
     footer span{
     font-size: 13px;  
     } 

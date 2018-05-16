@@ -19,4 +19,9 @@ $(function () {
     $('#open-js').delay(2500).fadeOut(500);
     $('#main-js').delay(2500).fadeIn(1300);
     
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {$('footer').css('position', 'relative').fadeOut(300)}
+        else($('footer').css('position', 'sticky').fadeIn(300));
+    });
+    
 });
