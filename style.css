@@ -696,7 +696,7 @@ footer a:hover{
     text-decoration: none;
     color: #40739e;
 }
-@media (max-width: 767px){
+@media (max-width: 655px){
     footer{
         position: sticky;
         bottom: 0;
