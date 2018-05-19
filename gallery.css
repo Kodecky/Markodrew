@@ -8,6 +8,25 @@ body{
     background-image: url(background/wood-1759566_1920.jpg);
 }
 
+/*===========globals=========*/
+#preloader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: fixed;
+}
+#preloader #image{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #000 url(blue_loading.gif) no-repeat center;
+    margin: -60px 0 0 -60px;
+}
 .scroll-up{
     width: 60px;
     height: 60px;

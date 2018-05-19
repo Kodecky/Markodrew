@@ -11,6 +11,11 @@ $(function () {
         }
     });
     
+    $(window).on('load', function() {
+       $('#preloader #image').fadeOut();
+        $('#preloader').delay(350).fadeOut();
+    });
+    
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {$('.scroll-up').fadeIn(); }
             else $('.scroll-up').fadeOut();
