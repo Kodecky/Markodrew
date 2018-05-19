@@ -71,8 +71,8 @@ header .navbar-brand span:hover{
     margin-top: 10px;
 }
 .dropdown .dropdown-menu{
-    background-color: rgba(159, 190, 223, 0.9);
-    width: 320px;
+    background-color: #222;
+    width: 92vw;
 }
 .dropdown .dropdown-menu li{
     text-align: center;
@@ -80,10 +80,12 @@ header .navbar-brand span:hover{
 .dropdown .dropdown-menu li a{
     transition: .1s; 
     border-radius: 5px;
+    color: lightgrey;
+    font-size: 24px;
 }
 .dropdown .dropdown-menu li a:hover{
     color: white;
-    background-color: rgb(41, 82, 163);
+    background-color: #31B0D5;
 }
 @media (max-width: 767px){
     .navbar-header{

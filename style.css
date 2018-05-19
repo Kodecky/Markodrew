@@ -213,8 +213,8 @@ header nav ul li a:hover{
     margin-top: 10px;
 }
 .dropdown .dropdown-menu{
-    background-color: rgba(159, 190, 223, 0.9);
-    width: 320px;
+    background-color: #222;
+    width: 92vw;
 }
 .dropdown .dropdown-menu li{
     text-align: center;
@@ -222,11 +222,12 @@ header nav ul li a:hover{
 .dropdown .dropdown-menu li a{
     transition: .1s; 
     border-radius: 5px;
-    color: rgb(13, 25, 38);
+    color: lightgrey;
+    font-size: 24px;
 }
 .dropdown .dropdown-menu li a:hover{
     color: white;
-    background-color: rgb(41, 82, 163);
+    background-color: #31B0D5;
 }
 @media (max-width: 767px){
     .navbar-header{
@@ -351,6 +352,7 @@ header nav ul li a:hover{
 @media (max-width: 767px){
     .offer .container{
         padding: 10px 0;
+        padding-top: 50px;
     }
     .offer .container h1,
     .offer .container h3,
