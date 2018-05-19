@@ -307,40 +307,56 @@ a.active{
 
 footer{
     background-color: #222;
-    height: 80px;
-    display: flex; 
-    margin-top: 30px;
+    height: 200px;
+    text-align: center;
+    line-height: 50px;
 }
 footer div{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 50%;
 }
 footer span{
     color: lavender;
     font-size: 18px;  
     font-family: 'Play', sans-serif;
+    display: block;
 }
-@media (max-width: 960px){
-    footer{
-        display: block;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }   
-    @media (max-height: 680px){
-        footer{
-            position: static;
-        }
-    }
+footer .footer-slogan{
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+}
+footer .footer-brand{
+    font-size: 22px;
+}
+footer .developer{
+    font-size: 12px;
+    color: lightgray;
+}
+footer .phone-link{
+    margin-right: 20px;
+}
+footer i{
+    font-size: 20px;
+    color: #31B0D5;
+    margin-right: 10px;
+}
+footer a{
+    text-decoration: none;
+    font-size: 18px;
+    color: lavender;
+}
+footer a:hover{
+    text-decoration: none;
+    color: #40739e;
 }
 @media (max-width: 767px){
     footer{
-        position: static;
+        line-height: 40px;
     }
     footer span{
-        font-size: 13px;  
+        font-size: 16px;
+    }
+    footer a{
+        display: block;
     }
 }
+
