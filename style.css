@@ -369,7 +369,7 @@ header nav ul li a:hover{
 @media (max-width: 767px){
     .offer .container{
         padding: 10px 0;
-        padding-top: 50px;
+        margin-top: 50px;
     }
     .offer .container h1,
     .offer .container h3,
