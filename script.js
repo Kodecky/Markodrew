@@ -13,7 +13,7 @@ $(function () {
     
     $(window).on('load', function() {
        $('#preloader #image').fadeOut();
-        $('#preloader').delay(350).fadeOut();
+        $('#preloader').delay(350).fadeOut('slow');
     });
     
     $(window).scroll(function () {
