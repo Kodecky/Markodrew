@@ -271,7 +271,7 @@ header .navbar-brand span:hover{
     background-color: rgba( 40, 40, 40, 0.7);
 }
 .thumbnails img{
-    height: 120px;
+    height: 100px;
 }
 .photo-viewer.is-loading:after{
     /*content: ;*/
