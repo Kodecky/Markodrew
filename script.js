@@ -11,20 +11,15 @@ $(function () {
         }
     });
     
-    $(window).on('load', function() {
-       $('#preloader #image').fadeOut();
-        $('#preloader').delay(350).fadeOut('slow');
-    });
-    
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {$('.scroll-up').fadeIn(); }
             else $('.scroll-up').fadeOut();
     });
     
     $(window).on('load', function() {
-        $('#open-js').css('display', 'flex')
+       $('#preloader #image').fadeOut();
+        $('#preloader').delay(350).fadeOut('slow');
     });
-    
     
     $('#open-js').on('click', function() {
         $(this).fadeOut(500);
@@ -34,8 +29,5 @@ $(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {$('footer').css('position', 'relative')}
         else($('footer').css('position', 'sticky').fadeIn(300));
-    });
-    
-    
-    
+    }); 
 });
