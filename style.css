@@ -42,7 +42,7 @@ body{
     margin-top: 0;
     letter-spacing: 1px;
 }
-.open-section h3{
+.open-section .open-section-slogan{
     display: block;
     color: #f1c40f;
     color: #7f8c8d;
@@ -103,7 +103,7 @@ body{
         margin-top: 0;
         text-align: center;
     }
-    .open-section h3{
+    .open-section .open-section-slogan{
         font-size: 25px;
         text-align: center;
     }
@@ -350,14 +350,30 @@ header nav ul li a:hover{
     from {opacity: 0.0;}
     to {opacity: 1;}
 }
-.offer .container h2,
-.offer .container h3,
-.offer .container h4,
-.offer .container h5,
-.offer .container h6{
+.offer .container h1{
     color: #f1c40f;
     display: inline-block;
     font-family: 'Archivo Black', sans-serif;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.offer .first-offer-header{
+    font-size: 22px;
+}
+.offer .second-offer-header{
+    font-size: 30px;
+}
+.offer .third-offer-header{
+    font-size: 24px;
+}
+.offer .container span{
+    color: #f39c12;
+    font-size: 28px;
+}
+.offer h3{
+    font-size: 22px;
+    color: #f39c12;
+    font-family: 'Courgette', cursive;
 }
 .offer .container p{
     color: lavender;
@@ -370,19 +386,26 @@ header nav ul li a:hover{
 }
 @media (max-width: 767px){
     .offer .container{
-        padding: 10px 0;
-        margin-top: 50px;
+        padding: 50px 0;
+        margin-top: 60px;
     }
-    .offer .container h1,
-    .offer .container h3,
-    .offer .container h4{
+    .offer .container h1{
+        display: block;
+    }
+    .offer .container span{
         display: none;
     }
-    .offer .container h6{
-        font-size: 10px;
+    .offer .first-offer-header{
+        font-size: 26px;
     }
-    .offer .container h2{
-        font-size: 21px;
+    .offer .second-offer-header{
+        font-size: 24px;
+    }
+    .offer .third-offer-header{
+        font-size: 22px;
+    }
+    .offer h3{
+        font-size: 18px;
     }
     .offer .container p{
         width: 90%;
@@ -577,21 +600,17 @@ header nav ul li a:hover{
     background-color: rgba(20, 20, 20 , 0.5);
     border-radius: 20px;
 }
-.aboutUs .container h1,
-.aboutUs .container h2,
-.aboutUs .container h3,
-.aboutUs .container h4,
-.aboutUs .container h5,
-.aboutUs .container h6{
+.aboutUs .container h1{
     color: #3498db;
     font-family: 'Archivo Black', sans-serif;
-}
-.aboutUs .container h1{
     margin-bottom: 50px;
 }
 .aboutUs .container small{
-    color: #2980b9;
-    font-family: 'Archivo Black', sans-serif;
+    color: #227093;
+    font-family: 'Courgette', cursive;
+    font-size: 26px;
+    display: block;
+    margin-top: 25px;
 }
 .aboutUs .container p{
     color: lavender;
@@ -606,21 +625,9 @@ header nav ul li a:hover{
     .aboutUs .container{
         padding: 10px 0;
     }
-    .aboutUs .container h1,
-    .aboutUs .container h2{
-        display: none;
-    }
-    .aboutUs .container h3{
+    .aboutUs .container h1{
         font-size: 28px;
-    }
-    .aboutUs .container h4{
-        font-size: 16px;
-    }
-    .aboutUs .container h5{
-        font-size: 12px;
-    }
-    .aboutUs .container h6{
-        font-size: 9px;
+        display: block;
     }
     .aboutUs .container p{
         width: 90%;
@@ -699,6 +706,13 @@ footer .footer-brand{
 footer .developer{
     font-size: 12px;
     color: lightgray;
+    cursor: pointer;
+}
+footer .developer:hover{
+    color: #31B0D5;
+}
+footer .developer:focus{
+    text-decoration: none;
 }
 footer .phone-link{
     margin-right: 20px;
@@ -715,14 +729,16 @@ footer a{
 }
 footer a:hover{
     text-decoration: none;
-    color: #40739e;
+    color: #31B0D5;
+    cursor: pointer;
+}
+footer a:focus{
+    text-decoration: none;
+    color: lavender;
 }
 @media (max-width: 767px){
     footer{
         line-height: 40px;
-    }
-    footer span{
-        font-size: 16px;
     }
     footer a{
         display: block;

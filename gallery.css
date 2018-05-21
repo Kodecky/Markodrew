@@ -101,6 +101,7 @@ header .navbar-brand span:hover{
     border-radius: 5px;
     color: lightgrey;
     font-size: 24px;
+    font-family: 'Play', sans-serif;
 }
 .dropdown .dropdown-menu li a:hover{
     color: white;
@@ -352,6 +353,13 @@ footer .developer{
     font-size: 12px;
     color: lightgray;
 }
+footer .developer:hover{
+    color: #31B0D5;
+    cursor: pointer;
+}
+footer .developer:focus{
+    text-decoration: none;
+}
 footer .phone-link{
     margin-right: 20px;
 }
@@ -367,7 +375,12 @@ footer a{
 }
 footer a:hover{
     text-decoration: none;
-    color: #40739e;
+    color: #31B0D5;
+    cursor: pointer;
+}
+footer a:focus{
+    text-decoration: none;
+    color: lavender;
 }
 @media (max-width: 767px){
     footer{
