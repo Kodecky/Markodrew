@@ -184,17 +184,17 @@ header .navbar-brand span:hover{
     
 }
 .projects .projects-item-1{
-    background-image: url(photo/obraz1.jpg);
+    background-image: url(photo/ob%C5%82o%C5%BCenie_betonu1.jpg);
     background-position: center;
     background-size: cover;
 }
 .projects .projects-item-2{
-    background-image: url(photo/obraz6.jpg);
+    background-image: url(photo/ob%C5%82o%C5%BCenie_betonu6.jpg);
     background-position: center;
     background-size: cover;
 }
 .projects .projects-item-3{
-    background-image: url(photo/obraz16.jpg);
+    background-image: url(photo/ob%C5%82o%C5%BCenie_betonu16.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -204,17 +204,17 @@ header .navbar-brand span:hover{
     background-size: cover;
 }
 .projects .projects-item-5{
-    background-image: url(photo/obraz22.jpg);
+    background-image: url(photo/schody_na_beton22.jpg);
     background-position: center;
     background-size: cover;
 }
 .projects .projects-item-6{
-    background-image: url(photo/obraz25.jpg);
+    background-image: url(photo/ob%C5%82o%C5%BCenie_betonu25.jpg);
     background-position: center;
     background-size: cover;
 }
 .projects .projects-item-7{
-    background-image: url(photo/obraz40.jpg);
+    background-image: url(photo/schody_drewniane_na_beton40.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -224,7 +224,7 @@ header .navbar-brand span:hover{
     background-size: cover;
 }
 .projects .projects-item-9{
-    background-image: url(photo/obraz54.jpg);
+    background-image: url(photo/schody_drewniane_na_beton54.jpg);
     background-position: center;
     background-size: cover;
 }
