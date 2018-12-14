@@ -45,7 +45,6 @@ body{
 .open-section .open-section-slogan{
     display: block;
     color: #f1c40f;
-    color: #7f8c8d;
     font-size: 34px;
     font-family: 'Pacifico', cursive;
     font-weight: 200;
@@ -58,14 +57,6 @@ body{
     font-family: 'Abril Fatface', cursive;
     margin-bottom: 0;
     letter-spacing: 2px;
-}
-.open-section span{
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    font-size: 14px;
-    font-family: 'Pacifico', cursive;
-    color: #f1c40f;
 }
 .open-section button{
     background-color: #2c3e50;
@@ -350,7 +341,8 @@ header nav ul li a:hover{
     from {opacity: 0.0;}
     to {opacity: 1;}
 }
-.offer .container h1{
+.offer .container h1,
+.offer .container h2{
     color: #f1c40f;
     display: inline-block;
     font-family: 'Archivo Black', sans-serif;
@@ -434,7 +426,7 @@ header nav ul li a:hover{
     background-color: #badc58;
     margin-bottom: 50px;
     border:4px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.7);
     transition: .5s;
 }
@@ -551,7 +543,7 @@ header nav ul li a:hover{
         padding: 20px 0;
     }
     .info{
-        width: 150px;
+        width: 260px;
         height: 40px;
         line-height: 25px;
         margin-bottom: 30px;
@@ -672,6 +664,11 @@ header nav ul li a:hover{
 .contact .container .wrapper{
     display: flex;
     justify-content: center;
+}
+.contact .container iframe{
+    width: 600px; 
+    height: 400px;
+    border: 2px solid black;
 }
 @media (max-width: 767px){
     .contact .container{

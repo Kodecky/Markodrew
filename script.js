@@ -18,7 +18,7 @@ $(function () {
     
     $(window).on('load', function() {
        $('#preloader #image').fadeOut();
-        $('#preloader').delay(350).fadeOut('slow');
+        $('#preloader').delay(150).fadeOut('slow');
     });
     
     $('#open-js').on('click', function() {
