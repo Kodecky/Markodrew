@@ -13,13 +13,14 @@ $(function () {
         }
     });
     
+    $(window).on('load', function() {
+        $('#preloader #image').fadeOut();
+         $('#preloader').delay(50).fadeOut('slow');
+     });
+     
     $(window).scroll(function() {
         if($(this).scrollTop()>300) $('.scroll-up').fadeIn();
         else $('.scroll-up').fadeOut();
     });
     
-    $(window).on('load', function() {
-       $('#preloader #image').fadeOut();
-        $('#preloader').delay(150).fadeOut('slow');
-    });
 });
