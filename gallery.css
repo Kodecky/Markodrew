@@ -119,6 +119,9 @@ header .navbar-brand span:hover{
     .navbar-header{
         display: inline-block;
     }
+    header .nav li a{
+        padding-right: 20px;
+    }
     .dropdown{
         display: inline-block;
         width: 60px;
