@@ -303,8 +303,7 @@ header nav ul li a:hover{
     top: 20%;
     left: 30%;
     font-size: 70px;
-    font-family: 'merienda', cursive;
-    /* font-family: 'Great Vibes', cursive; */
+    font-family: 'Great Vibes', cursive;
     font-weight: 400;
 }
 .slogan-second{
@@ -312,8 +311,7 @@ header nav ul li a:hover{
     top: 65%;
     left: 75%;
     font-size: 70px;
-    font-family: 'merienda', cursive;
-    /* font-family: 'Great Vibes', cursive; */
+    font-family: 'Great Vibes', cursive;
     font-weight: 400;
 }
 .slogan-third{
@@ -321,8 +319,7 @@ header nav ul li a:hover{
     top: 75%;
     left: 10%;
     font-size: 70px;
-    font-family: 'merienda', cursive;
-    /* font-family: 'Great Vibes', cursive; */
+    font-family: 'Great Vibes', cursive;
     font-weight: 400;
 }
 .slogan-fourth{
@@ -330,9 +327,11 @@ header nav ul li a:hover{
     top: 45%;
     left: 10%;
     font-size: 70px;
-    font-family: 'merienda', cursive;
-    /* font-family: 'Great Vibes', cursive; */
+    font-family: 'Great Vibes', cursive;
     font-weight: 400;
+}
+.mobile-slider{
+    display: none;
 }
 @media (max-width: 1024px){
     .carousel{
@@ -349,6 +348,7 @@ header nav ul li a:hover{
         left: 2%;
     }
     .mobile-slider{
+        display: block;
         width: 100%;
         height: calc( 100vh - 256px);
         margin-top: 56px;
@@ -365,16 +365,13 @@ header nav ul li a:hover{
     }
     .mobile-slider img:nth-of-type(1){
         animation: slider 20s linear infinite both;
-        left: calc(50% - 90px);
 
     }
     .mobile-slider img:nth-of-type(2){
         animation: slider 20s 5s linear infinite both;
-        left: calc(50% - 50px);
     }
     .mobile-slider img:nth-of-type(3){
         animation: slider 20s 10s linear infinite both;
-        left: calc(50% + 100px);
     }
     .mobile-slider img:nth-of-type(4){
         animation: slider 20s 15s linear infinite both;
@@ -385,6 +382,7 @@ header nav ul li a:hover{
         font-family: 'great vibes', cursive;
         font-size: 80px;
         color: wheat;
+        text-transform: capitalize;
     }
     .mobile-slider span:nth-of-type(1){
         top: 50%;
