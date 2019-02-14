@@ -97,6 +97,7 @@ header .navbar-brand span:hover{
     background-color: #222;
     width: 100vw;
     border: none;
+    padding: 20px 0;
 }
 .dropdown .dropdown-menu li{
     text-align: center;
@@ -125,6 +126,10 @@ header .navbar-brand span:hover{
     .dropdown{
         display: inline-block;
         width: 60px;
+    }
+    .dropdown .dropdown-menu li a{
+        font-size: 20px;
+        padding: 8px 0;
     }
     .dropdown a:hover{
         transform: scale(0.9);
@@ -394,9 +399,13 @@ footer .footer-brand{
     font-size: 22px;
 }
 footer .developer{
-    height: 40px;
+    display: block;
     font-size: 12px;
     color: lightgray;
+    cursor: pointer;
+    height: 40px;
+    text-align: right;
+    padding-right: 20px;
 }
 footer .developer:hover{
     color: #31B0D5;

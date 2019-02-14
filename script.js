@@ -31,7 +31,7 @@ $(function () {
 
     // animacja sekcji miniGallery
     $(window).scroll(function() {
-        if ($(this).scrollTop() > $('.horizontal-second').offset().top){
+        if ($(this).scrollTop() > $('.offer .container p').offset().top){
             $('.mini-gallery [class*="image-"]').addClass('show');
         }
     })
@@ -47,11 +47,12 @@ $(function () {
 
     // animacja sekcji kontakt
     $(window).scroll(function() {
-        if ($(this).scrollTop() > $('.horizontal-fourth').offset().top){
+        if ($(this).scrollTop() > $('.aboutUs .container p').offset().top){
             $('.contact .container').addClass('show');
             $('.contact iframe').addClass('show');
         }
     })
+
     
 
     // animacja przejścia do strony głównej

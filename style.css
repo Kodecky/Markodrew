@@ -73,7 +73,7 @@ body{
 .open-section a{
     color: white;
     font-size: 22px;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'courgette', cursive;
     text-decoration: none;
     letter-spacing: 1px;
     width: 100%;
@@ -84,7 +84,8 @@ body{
     transform: scale(1.1);
 }
 
-@media (max-width: 767px){
+@media (max-width: 1024px){
+/* @media (max-width: 767px){ */
     .open-section .container{
         width: 100%;
     }
@@ -171,10 +172,12 @@ body{
     padding: 15px;
     margin: 0 auto 10px auto;
 }
-@media (max-width: 767px){
+@media (max-width: 1024px){
+/* @media (max-width: 767px){ */
     .scroll-up{
         right: 10px;
         bottom: 50px;
+        z-index: 2;
     }
     .horizontal{
         width: 30px;
@@ -227,6 +230,7 @@ header nav ul li a:hover{
     background-color: #222;
     width: 100vw;
     border: none;
+    padding: 20px 0;
 }
 .dropdown .dropdown-menu li{
     text-align: center;
@@ -252,11 +256,19 @@ header nav ul li a:hover{
         display: inline-block;
         width: 60px;
     }
-    .dropdown a{
+    .dropdown .dropdown-menu li a{
         font-size: 20px;
+        padding: 8px 0;
     }
     .dropdown a:hover{
         transform: scale(0.9);
+    }
+
+}
+@media (min-width: 768px, max-width: 1024px){
+/* @media (max-width: 767px){ */
+    .dropdown{
+        display: none;
     }
 }
 
@@ -291,7 +303,8 @@ header nav ul li a:hover{
     top: 20%;
     left: 30%;
     font-size: 70px;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'merienda', cursive;
+    /* font-family: 'Great Vibes', cursive; */
     font-weight: 400;
 }
 .slogan-second{
@@ -299,7 +312,8 @@ header nav ul li a:hover{
     top: 65%;
     left: 75%;
     font-size: 70px;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'merienda', cursive;
+    /* font-family: 'Great Vibes', cursive; */
     font-weight: 400;
 }
 .slogan-third{
@@ -307,7 +321,8 @@ header nav ul li a:hover{
     top: 75%;
     left: 10%;
     font-size: 70px;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'merienda', cursive;
+    /* font-family: 'Great Vibes', cursive; */
     font-weight: 400;
 }
 .slogan-fourth{
@@ -315,14 +330,16 @@ header nav ul li a:hover{
     top: 45%;
     left: 10%;
     font-size: 70px;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'merienda', cursive;
+    /* font-family: 'Great Vibes', cursive; */
     font-weight: 400;
 }
-@media (max-width: 767px){
+@media (max-width: 1024px){
     .carousel{
         margin-top: 20px;
         margin-bottom: 100px;
         box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.7);
+        display: none;
     }
     [class*="slogan-"]{
         font-size: 45px;
@@ -330,6 +347,93 @@ header nav ul li a:hover{
     .slogan-third{
         top: 58%;
         left: 2%;
+    }
+    .mobile-slider{
+        width: 100%;
+        height: calc( 100vh - 256px);
+        margin-top: 56px;
+        overflow: hidden;
+        position: relative;
+    }
+    .mobile-slider img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        opacity: 0;
+    }
+    .mobile-slider img:nth-of-type(1){
+        animation: slider 20s linear infinite both;
+        left: calc(50% - 90px);
+
+    }
+    .mobile-slider img:nth-of-type(2){
+        animation: slider 20s 5s linear infinite both;
+        left: calc(50% - 50px);
+    }
+    .mobile-slider img:nth-of-type(3){
+        animation: slider 20s 10s linear infinite both;
+        left: calc(50% + 100px);
+    }
+    .mobile-slider img:nth-of-type(4){
+        animation: slider 20s 15s linear infinite both;
+
+    }
+    .mobile-slider span{
+        position: absolute;
+        font-family: 'great vibes', cursive;
+        font-size: 80px;
+        color: wheat;
+    }
+    .mobile-slider span:nth-of-type(1){
+        top: 50%;
+        left: 30px;
+        animation: slider 20s linear infinite both;
+    }
+    .mobile-slider span:nth-of-type(2){
+        top: 70%;
+        left: 60%;
+        animation: slider 20s 5s linear infinite both;
+    }
+    .mobile-slider span:nth-of-type(3){
+        top: 55%;
+        left: 10%;
+        animation: slider 20s 10s linear infinite both;
+    }
+    .mobile-slider span:nth-of-type(4){
+        top: 40%;
+        left: 10%;
+        animation: slider 20s 15s linear infinite both;
+    }
+
+    @keyframes slider{
+        0%{
+            opacity: 0;
+        }
+        3%{
+            opacity: 1;
+        }
+        /* 6%{
+            opacity: 1;
+        } */
+        26%{
+            opacity: 1;
+        }
+        27%{
+            opacity: 0;
+        }
+        97%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+}
+@media (min-width: 768px, max-width: 1024px){
+    .mobile-slider span{
+        font-size: 85px !important;
     }
 }
 
@@ -390,11 +494,11 @@ header nav ul li a:hover{
     line-height: 1.4em; 
     font-family: 'Play', sans-serif;
 }
-@media (max-width: 767px){
+@media (max-width: 1024px){
+/* @media (max-width: 767px){ */
     .offer .container{
         padding: 100px 0;
         margin-top: 60px;
-        transition-delay: .3s; 
         position: relative;
     }
     .offer .container.show{
@@ -480,7 +584,7 @@ header nav ul li a:hover{
     border-radius: 5px 0 0 0;
 }
 .mini-gallery .image-1.show{
-    animation: appear 1s .5s linear both;
+    animation: appear 1s .2s linear both;
 }
 .mini-gallery .image-2{
     background-image: url(mini-gallery/obraz7.jpg);
@@ -603,7 +707,8 @@ header nav ul li a:hover{
     justify-content: center;
     align-items: center;
 }
-@media (max-width: 767px){
+@media (max-width: 1024px){
+/* @media (max-width: 767px){ */
     .mini-gallery{
         padding: 20px 0;
     }
@@ -685,10 +790,10 @@ header nav ul li a:hover{
     line-height: 1.4em;
     font-family: 'Play', sans-serif;
 }
-@media (max-width: 767px){
+@media (max-width: 1024px){
+/* @media (max-width: 767px){ */
     .aboutUs .container{
         padding: 100px 0;
-        transition-delay: .3s;
     }
     .aboutUs .container.show{
         padding: 10px 0;
@@ -762,15 +867,16 @@ header nav ul li a:hover{
 .contact .container iframe.show{
     margin-left: 0;
 }
-@media (max-width: 767px){
+@media (max-width: 1024px){
+/* @media (max-width: 767px){ */
     .contact .container{
         padding: 100px 0;
-        transition-delay: .3s;
     }
     .contact .container.show{
         padding: 10px 0;
         opacity: 1;
     }
+    
 }
 
 /*==========footer=========*/
@@ -834,7 +940,8 @@ footer a:focus{
     text-decoration: none;
     color: lavender;
 }
-@media (max-width: 767px){
+@media (max-width: 1024px){
+/* @media (max-width: 767px){ */
     footer{
         line-height: 40px;
     }
