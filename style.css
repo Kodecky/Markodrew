@@ -384,12 +384,12 @@ header nav ul li a:hover{
         text-transform: capitalize;
     }
     .mobile-slider span:nth-of-type(1){
-        top: 50%;
+        top: 45%;
         left: 30px;
         animation: slider 20s linear infinite both;
     }
     .mobile-slider span:nth-of-type(2){
-        top: 70%;
+        top: 60%;
         left: 40%;
         animation: slider 20s 5s linear infinite both;
     }
