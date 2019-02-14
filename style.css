@@ -386,22 +386,22 @@ header nav ul li a:hover{
     .mobile-slider span:nth-of-type(1){
         top: 45%;
         left: 30px;
-        animation: slider 20s linear infinite both;
+        animation: sliderSpan 20s linear infinite both;
     }
     .mobile-slider span:nth-of-type(2){
         top: 60%;
         left: 40%;
-        animation: slider 20s 5s linear infinite both;
+        animation: sliderSpan 20s 5s linear infinite both;
     }
     .mobile-slider span:nth-of-type(3){
         top: 55%;
         left: 10%;
-        animation: slider 20s 10s linear infinite both;
+        animation: sliderSpan 20s 10s linear infinite both;
     }
     .mobile-slider span:nth-of-type(4){
         top: 40%;
         left: 10%;
-        animation: slider 20s 15s linear infinite both;
+        animation: sliderSpan 20s 15s linear infinite both;
     }
 
     @keyframes slider{
@@ -411,13 +411,31 @@ header nav ul li a:hover{
         3%{
             opacity: 1;
         }
-        /* 6%{
-            opacity: 1;
-        } */
         26%{
             opacity: 1;
         }
         27%{
+            opacity: 0;
+        }
+        97%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    @keyframes sliderSpan{
+        0%{
+            opacity: 0;
+        }
+        10%{
+            opacity: 1;
+        }
+        20%{
+            opacity: 1;
+        }
+        26%{
             opacity: 0;
         }
         97%{
