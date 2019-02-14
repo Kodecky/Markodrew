@@ -365,7 +365,6 @@ header nav ul li a:hover{
     }
     .mobile-slider img:nth-of-type(1){
         animation: slider 20s linear infinite both;
-        transform: translate(-70%, -50%);
     }
     .mobile-slider img:nth-of-type(2){
         animation: slider 20s 5s linear infinite both;
