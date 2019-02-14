@@ -12,44 +12,47 @@ $(function () {
             event.preventDefault();
             $('html, body').animate({
                 scrollTop: target.offset().top
-            }, 2000);
+            }, 1000);
         }
     });
 
     // przycisk scrollUp
-    $(window).scroll(function () {
+    $(window).on('scroll', function () {
         if ($(this).scrollTop() > 300) {$('.scroll-up').fadeIn(); }
             else $('.scroll-up').fadeOut();
     });
 
     // animacja sekcji oferta
-    $(window).scroll(function() {
+    $(window).on('scroll', function() {
         if ($(this).scrollTop() > $('.horizontal-first').offset().top){
             $('.offer .container').addClass('show');
-        }
+        } else $('.offer .container').removeClass('show');
     })
 
     // animacja sekcji miniGallery
-    $(window).scroll(function() {
+    $(window).on('scroll', function() {
         if ($(this).scrollTop() > $('.offer .container p').offset().top){
             $('.mini-gallery [class*="image-"]').addClass('show');
-        }
+        } else $('.mini-gallery [class*="image-"]').removeClass('show');
     })
     
 
     // animacja sekcji stolarnie
-    $(window).scroll(function() {
+    $(window).on('scroll', function() {
         if ($(this).scrollTop() > $('.horizontal-third').offset().top){
             $('.aboutUs .container').addClass('show');
-        }
+        } else $('.aboutUs .container').removeClass('show');
     })
     
 
     // animacja sekcji kontakt
-    $(window).scroll(function() {
+    $(window).on('scroll', function() {
         if ($(this).scrollTop() > $('.aboutUs .container p').offset().top){
             $('.contact .container').addClass('show');
             $('.contact iframe').addClass('show');
+        } else {
+            $('.contact .container').removeClass('show');
+            $('.contact iframe').removeClass('show');
         }
     })
 
