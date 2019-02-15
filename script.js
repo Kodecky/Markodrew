@@ -12,7 +12,7 @@ $(function () {
             event.preventDefault();
             $('html, body').animate({
                 scrollTop: target.offset().top
-            }, 400);
+            }, 1000);
         }
     });
 
@@ -39,7 +39,8 @@ $(function () {
 
     // animacja sekcji stolarnie
     $(window).on('scroll', function() {
-        if ($(this).scrollTop() > $('.mini-gallery .container .row:nth-of-type(4)').offset().top){
+        // if ($(this).scrollTop() > $('.mini-gallery .container .row:nth-of-type(4)').offset().top){
+        if ($(this).scrollTop() > $('.horizontal-third').offset().top){
             $('.aboutUs .container').addClass('show');
         } else $('.aboutUs .container').removeClass('show');
     })
