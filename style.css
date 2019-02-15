@@ -408,16 +408,13 @@ header nav ul li a:hover{
         0%{
             opacity: 0;
         }
-        3%{
+        5%{
             opacity: 1;
         }
-        26%{
+        25%{
             opacity: 1;
         }
-        27%{
-            opacity: 0;
-        }
-        97%{
+        30%{
             opacity: 0;
         }
         100%{
