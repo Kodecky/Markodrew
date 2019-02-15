@@ -380,7 +380,8 @@ header nav ul li a:hover{
         position: absolute;
         font-family: 'great vibes', cursive;
         font-size: 80px;
-        color: rgb(230, 247, 139);
+        color: rgb(86, 129, 185);
+        /* color: rgb(124, 141, 28); */
         text-transform: capitalize;
     }
     .mobile-slider span:nth-of-type(1){
@@ -426,16 +427,16 @@ header nav ul li a:hover{
         0%{
             opacity: 0;
         }
+        4%{
+            opacity: 0;
+        }
         10%{
             opacity: 1;
         }
-        20%{
+        21%{
             opacity: 1;
         }
-        26%{
-            opacity: 0;
-        }
-        97%{
+        25%{
             opacity: 0;
         }
         100%{
