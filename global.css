@@ -1,0 +1,128 @@
+:root {
+    --paragraph: 'Play', sans-serif;
+    --header: 'Archivo Black', sans-serif;
+    --yellow: #f1c40f;
+    --white: #FFF;
+    --light: #CFC07D;
+    --medium: #806A39;
+    --dark: #0D0B06;
+    --blue: #5485FF;
+}
+
+/*===preloader====*/
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: fixed;
+}
+
+#preloader #image {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #000 url(blue_loading.gif) no-repeat center;
+    margin: -60px 0 0 -60px;
+}
+
+/*=====scroll up=======*/
+.scroll-up {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+    /* background-color: rgba(66, 179, 244, 0.5); */
+    background-color: var(--light);
+    text-align: center;
+    z-index: 10;
+    transition: .3s ease all;
+    display: none;
+}
+
+.scroll-up:hover {
+    /* background-color: rgba(66, 179, 244, 1); */
+    background-color: var(--medium);
+}
+
+.scroll-up a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.scroll-up i {
+    color: var(--dark);
+    /* color: rgba(255, 255, 255, 0.5); */
+    font-size: 37px;
+    /* transform: scale(.5); */
+}
+
+.horizontal {
+    width: 50px;
+    margin: 10px auto 0 auto;
+    border-bottom: thin solid rgba(255, 255, 255, 0.5);
+}
+
+.vertical {
+    height: 300px;
+    margin-left: 50%;
+    border-left: thin solid rgba(255, 255, 255, 0.5);
+}
+
+.icon {
+    border: thin solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    text-align: center;
+    color: var(--medium);
+    /* color: rgba(255, 229, 2, 0.5); */
+    font-family: 'Merienda', cursive;
+    font-size: 30px;
+    width: 70px;
+    padding: 15px;
+    margin: 0 auto 10px auto;
+}
+
+@media (max-width: 1024px) {
+
+    /* @media (max-width: 767px){ */
+    .scroll-up {
+        right: 10px;
+        bottom: 50px;
+        z-index: 2;
+    }
+
+    .horizontal {
+        width: 30px;
+        margin-top: 10px;
+    }
+
+    .vertical {
+        height: 200px;
+    }
+
+    .icon {
+        width: 30px;
+        padding: 5px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    /* .horizontal-first,
+    .vertical-first,
+    .icon-first {
+        display: none;
+    } */
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+    .vertical {
+        height: 70px;
+    }
+}

@@ -1,0 +1,66 @@
+footer {
+    background-color: #000;
+    height: 200px;
+    text-align: center;
+    line-height: 50px;
+}
+
+footer div {
+    height: 50%;
+}
+
+footer span {
+    color: var(--light);
+    font-size: 18px;
+    font-family: var(--paragraph);
+    display: block;
+}
+
+footer .footer-slogan {
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+}
+
+footer .footer-brand {
+    font-size: 22px;
+}
+
+footer .phone-link {
+    margin-right: 20px;
+}
+
+footer i {
+    font-size: 20px;
+    color: var(--blue);
+    margin-right: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--light);
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--medium);
+    cursor: pointer;
+}
+
+footer a:focus {
+    text-decoration: none;
+    color: var(--medium);
+}
+
+@media (max-width: 1024px) {
+
+    /* @media (max-width: 767px){ */
+    footer {
+        line-height: 40px;
+    }
+
+    footer a {
+        display: block;
+    }
+}
+
