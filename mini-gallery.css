@@ -1,0 +1,287 @@
+/*=======gallery section=========*/
+
+.mini-gallery {
+    padding: 10px 0;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mini-gallery .row {
+    margin: 0;
+}
+
+.mini-gallery .container {
+    text-align: center;
+}
+
+.info {
+    width: 300px;
+    height: 50px;
+    line-height: 12px;
+    padding: 0;
+    background-color: var(--blue);
+    /* background-color: #badc58; */
+    margin-bottom: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.7); */
+    transition: .3s;
+}
+
+.info:hover {
+    background-color: var(--light);
+    /* box-shadow: 0px 0px 5px 1px var(--medium);
+    border: 1px solid var(--medium); */
+}
+
+.info a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--paragraph);
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+.mini-gallery [class*="image-"] {
+    position: relative;
+    /*margin-top: 50px;*/
+    min-height: 180px;
+    border: 1px solid black;
+    box-shadow: 15px 15px 12px rgba(0, 0, 0, 0.7);
+    opacity: 0;
+}
+
+.mini-gallery .image-1 {
+    background-image: url(mini-gallery/obraz2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px 0 0 0;
+}
+
+.mini-gallery .image-1.show {
+    animation: appearImg 1s .2s linear both;
+}
+
+.mini-gallery .image-2 {
+    background-image: url(mini-gallery/obraz7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mini-gallery .image-2.show {
+    animation: appearImg 1s .6s linear both;
+}
+
+.mini-gallery .image-3 {
+    background-image: url(mini-gallery/obraz16.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 5px 0 0;
+}
+
+.mini-gallery .image-3.show {
+    animation: appearImg 1s .7s linear both;
+}
+
+.mini-gallery .image-4 {
+    background-image: url(mini-gallery/obraz21.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mini-gallery .image-4.show {
+    animation: appearImg 1s .8s linear both;
+}
+
+.mini-gallery .image-5 {
+    background-image: url(mini-gallery/obraz22.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mini-gallery .image-5.show {
+    animation: appearImg 1s .9s linear both;
+}
+
+.mini-gallery .image-6 {
+    background-image: url(mini-gallery/obraz25.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mini-gallery .image-6.show {
+    animation: appearImg 1s 1s linear both;
+}
+
+.mini-gallery .image-7 {
+    background-image: url(mini-gallery/obraz37.jpg);
+    background-size: cover;
+    background-position: 60% 20%;
+    min-height: 200px;
+}
+
+.mini-gallery .image-7.show {
+    animation: appearImg 1s 1.1s linear both;
+}
+
+.mini-gallery .image-8 {
+    background-image: url(mini-gallery/obraz50.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+}
+
+.mini-gallery .image-8.show {
+    animation: appearImg 1s 1.2s linear both;
+}
+
+.mini-gallery .image-9 {
+    background-image: url(mini-gallery/obraz54.jpg);
+    background-size: cover;
+    background-position: 60% 65%;
+    border-radius: 0 0 0 5px;
+}
+
+.mini-gallery .image-9.show {
+    animation: appearImg 1s 1.3s linear both;
+}
+
+.mini-gallery .image-10 {
+    background-image: url(mini-gallery/obraz64.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mini-gallery .image-10.show {
+    animation: appearImg 1s 1.4s linear both;
+}
+
+.mini-gallery .image-11 {
+    background-image: url(mini-gallery/obraz65.jpg);
+    background-size: cover;
+    background-position: 100% 100%;
+    border-radius: 0 0 5px 0;
+}
+
+.mini-gallery .image-11.show {
+    animation: appearImg 1s 1.5s linear both;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 40, 40, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.layer a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.layer i {
+    color: lightgray;
+    font-size: 30px;
+    transform: scale(1);
+    animation: resize 1s .5s linear alternate infinite;
+}
+
+@keyframes resize {
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes appearImg {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+[class*="image-"]:hover .layer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+
+    /* @media (max-width: 767px){ */
+    .mini-gallery {
+        padding: 20px 0;
+    }
+
+    .info {
+        width: 260px;
+        height: 40px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
+    .info a {
+        padding: 3px;
+    }
+
+    .mini-gallery [class*="image-"] {
+        min-height: 120px;
+    }
+
+    .mini-gallery .image-1 {
+        background-position: 40% 50%;
+    }
+
+    .mini-gallery .image-2 {
+        background-position: 55% 35%;
+    }
+
+    .mini-gallery .image-3 {
+        background-position: 40% 45%;
+    }
+
+    .mini-gallery .image-4 {
+        background-position: 68% 55%;
+    }
+
+    .mini-gallery .image-7 {
+        min-height: 125px;
+        background-position: 70% 50%;
+    }
+
+    .mini-gallery .image-8 {
+        min-height: 125px;
+    }
+
+    .mini-gallery .image-9 {
+        background-position: 35% 60%;
+    }
+
+    .mini-gallery .image-10 {
+        background-position: 43% 50%;
+    }
+
+    .mini-gallery .image-11 {
+        background-position: 48% 50%;
+    }
+}

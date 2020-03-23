@@ -33,8 +33,8 @@ $(function () {
     // animacja sekcji miniGallery
     $(window).on('scroll', function() {
         if ($(this).scrollTop() > $('.horizontal-second').offset().top){
-        // if ($(this).scrollTop() > $('.offer .container p').offset().top){
-            $('.mini-gallery [class*="image-"]').addClass('show');
+            // if ($(this).scrollTop() > $('.mini-gallery .container .row:nth-of-type(4)').offset().top){
+                $('.gallery-link .container').addClass('show-gallery');
         } 
         // else $('.mini-gallery [class*="image-"]').removeClass('show');
     })

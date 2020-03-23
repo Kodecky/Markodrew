@@ -355,293 +355,128 @@ body {
     }
 }
 
-/*=======gallery section=========*/
-
-.mini-gallery {
-    padding: 10px 0;
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.mini-gallery .row {
-    margin: 0;
-}
-
-.mini-gallery .container {
-    text-align: center;
-}
-
-.info {
-    width: 300px;
-    height: 50px;
-    line-height: 12px;
+/*========gallery link============*/
+.gallery-link .container{
+    /* padding: 10px 0; */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* box-shadow: 0px 0px 15px 1px var(--medium); */
+    max-width: 90%;
+    border-radius: 20px;
+    /* animation-name: appear;
+    animation-duration: 2s; */
+    /* padding: 150px 0; */
+    /* opacity: 0; */
+    transition: margin-top .3s linear, opacity .3s linear;
+    /* margin: 50px auto; */
+    display: grid;
+    grid-auto-flow: row;
+    /* column-gap: 2px;
+    row-gap: 1px; */
     padding: 0;
+    border: 1px solid #000;
+    opacity: 0;
+    margin-top: 100px;
+}
+.container.show-gallery{
+    opacity: 1;
+    margin-top: 0;
+}
+[class*="img-part"]{
+    min-height: 250px;
+    border:1px solid #000;
+}
+.img-part-1{
+    grid-row: 1/3;
+    grid-column: 1;
+    background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-40.jpg);
+    background-size: 100% 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px 0 0 0;
+}
+.img-part-2{
+    grid-row: 1/2;
+    grid-column: 2;
+    background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-69.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+}
+.img-part-3{
+    grid-row: 2/4;
+    grid-column: 3;
+    background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-22.jpg);
+    background-size: 100% 110%;
+    background-position: center;
+    border-radius: 0 0 20px 0;
+}
+.img-part-4{
+    grid-row: 3;
+    grid-column: 1/3;
+    background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-45.jpg);
+    background-size: 100% 130%;
+    background-position: 0 0;
+    border-radius: 0 0 0 20px;
+}
+.img-part-5{
+    grid-row: 1/2;
+    grid-column: 3;
+    background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-2.jpg);
+    background-size: 100% 120%;
+    background-position: center;
+    border-radius: 0 20px 0 0;
+}
+.text-part{
+    grid-row: 2/3;
+    grid-column: 2;
+    position: relative;
+    min-height: 250px;
+    background-color: #000;
+    border:1px dashed var(--light);
+}
+.text-part .gallery-enter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+}
+.text-part h1{
+    font-size: 25px;
+    color: var(--light);
+}
+.text-part button{
+    margin-top: 20px;
     background-color: var(--blue);
-    /* background-color: #badc58; */
-    margin-bottom: 50px;
-    border: 1px solid black;
-    border-radius: 10px;
-    /* box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.7); */
+    padding: 5px 15px;
+    border: 1px solid #000;
+    border-radius: 8px;
     transition: .3s;
 }
-
-.info:hover {
-    background-color: var(--light);
-    /* box-shadow: 0px 0px 5px 1px var(--medium);
-    border: 1px solid var(--medium); */
+.text-part button:hover{
+    /* background-color: var(--light); */
+    opacity: 0.6;
 }
-
-.info a {
+.text-part button a{
     text-decoration: none;
-    color: black;
-    font-family: var(--paragraph);
-    font-size: 20px;
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 15px;
+    color: #000;
 }
-
-.mini-gallery [class*="image-"] {
-    position: relative;
-    /*margin-top: 50px;*/
-    min-height: 180px;
-    border: 1px solid black;
-    box-shadow: 15px 15px 12px rgba(0, 0, 0, 0.7);
-    opacity: 0;
-}
-
-.mini-gallery .image-1 {
-    background-image: url(mini-gallery/obraz2.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 5px 0 0 0;
-}
-
-.mini-gallery .image-1.show {
-    animation: appearImg 1s .2s linear both;
-}
-
-.mini-gallery .image-2 {
-    background-image: url(mini-gallery/obraz7.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.mini-gallery .image-2.show {
-    animation: appearImg 1s .6s linear both;
-}
-
-.mini-gallery .image-3 {
-    background-image: url(mini-gallery/obraz16.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 0 5px 0 0;
-}
-
-.mini-gallery .image-3.show {
-    animation: appearImg 1s .7s linear both;
-}
-
-.mini-gallery .image-4 {
-    background-image: url(mini-gallery/obraz21.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.mini-gallery .image-4.show {
-    animation: appearImg 1s .8s linear both;
-}
-
-.mini-gallery .image-5 {
-    background-image: url(mini-gallery/obraz22.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.mini-gallery .image-5.show {
-    animation: appearImg 1s .9s linear both;
-}
-
-.mini-gallery .image-6 {
-    background-image: url(mini-gallery/obraz25.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.mini-gallery .image-6.show {
-    animation: appearImg 1s 1s linear both;
-}
-
-.mini-gallery .image-7 {
-    background-image: url(mini-gallery/obraz37.jpg);
-    background-size: cover;
-    background-position: 60% 20%;
-    min-height: 200px;
-}
-
-.mini-gallery .image-7.show {
-    animation: appearImg 1s 1.1s linear both;
-}
-
-.mini-gallery .image-8 {
-    background-image: url(mini-gallery/obraz50.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 200px;
-}
-
-.mini-gallery .image-8.show {
-    animation: appearImg 1s 1.2s linear both;
-}
-
-.mini-gallery .image-9 {
-    background-image: url(mini-gallery/obraz54.jpg);
-    background-size: cover;
-    background-position: 60% 65%;
-    border-radius: 0 0 0 5px;
-}
-
-.mini-gallery .image-9.show {
-    animation: appearImg 1s 1.3s linear both;
-}
-
-.mini-gallery .image-10 {
-    background-image: url(mini-gallery/obraz64.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.mini-gallery .image-10.show {
-    animation: appearImg 1s 1.4s linear both;
-}
-
-.mini-gallery .image-11 {
-    background-image: url(mini-gallery/obraz65.jpg);
-    background-size: cover;
-    background-position: 100% 100%;
-    border-radius: 0 0 5px 0;
-}
-
-.mini-gallery .image-11.show {
-    animation: appearImg 1s 1.5s linear both;
-}
-
-.layer {
-    width: 100%;
-    height: 100%;
-    background: rgba(40, 40, 40, 0.7);
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: none;
-    cursor: pointer;
-}
-
-.layer a {
-    display: block;
-    width: 100%;
-    height: 100%;
+/* .gallery-link .photo-part{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+    order: 1;
+    background-color: #fff;
+    flex-grow: 1;
+    flex-basis: 50%;
 }
-
-.layer i {
-    color: lightgray;
-    font-size: 30px;
-    transform: scale(1);
-    animation: resize 1s .5s linear alternate infinite;
-}
-
-@keyframes resize {
-    100% {
-        transform: scale(1.5);
-    }
-}
-
-@keyframes appearImg {
-    0% {
-        opacity: 0;
-    }
-
-    30% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-
-[class*="image-"]:hover .layer {
+.gallery-link .text-part{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    order: 2;
+    flex-grow: 1;
+    flex-basis: 50%;
+} */
 
-@media (max-width: 1024px) {
 
-    /* @media (max-width: 767px){ */
-    .mini-gallery {
-        padding: 20px 0;
-    }
-
-    .info {
-        width: 260px;
-        height: 40px;
-        line-height: 25px;
-        margin-bottom: 30px;
-    }
-
-    .info a {
-        padding: 3px;
-    }
-
-    .mini-gallery [class*="image-"] {
-        min-height: 120px;
-    }
-
-    .mini-gallery .image-1 {
-        background-position: 40% 50%;
-    }
-
-    .mini-gallery .image-2 {
-        background-position: 55% 35%;
-    }
-
-    .mini-gallery .image-3 {
-        background-position: 40% 45%;
-    }
-
-    .mini-gallery .image-4 {
-        background-position: 68% 55%;
-    }
-
-    .mini-gallery .image-7 {
-        min-height: 125px;
-        background-position: 70% 50%;
-    }
-
-    .mini-gallery .image-8 {
-        min-height: 125px;
-    }
-
-    .mini-gallery .image-9 {
-        background-position: 35% 60%;
-    }
-
-    .mini-gallery .image-10 {
-        background-position: 43% 50%;
-    }
-
-    .mini-gallery .image-11 {
-        background-position: 48% 50%;
-    }
-}
 
 
 /*========about us section========*/
