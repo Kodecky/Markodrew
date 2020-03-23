@@ -374,12 +374,6 @@ body {
     row-gap: 1px; */
     padding: 0;
     border: 1px solid #000;
-    opacity: 0;
-    margin-top: 100px;
-}
-.container.show-gallery{
-    opacity: 1;
-    margin-top: 0;
 }
 [class*="img-part"]{
     min-height: 250px;
