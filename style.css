@@ -469,7 +469,35 @@ body {
     flex-grow: 1;
     flex-basis: 50%;
 } */
-
+@media (max-width: 950px){
+    .img-part-3,
+    .img-part-4,
+    .img-part-5{
+        display: none;
+    }
+    .img-part-1{
+        border-radius: 20px 0 0 20px;
+    }
+    .img-part-2{
+        border-radius: 0 20px 0 0;
+    }
+}
+@media (max-width: 550px){
+    [class*="img-part"]{
+        height: 100px;
+    }
+    .img-part-1{
+        border-radius: 20px 0 0 0;
+        background-size: 100% 100%;
+    }
+    .img-part-2{
+        background-size: 180% 100%;
+    }
+    .text-part{
+        height: 100px;
+        grid-column: 1/3;
+    }
+}
 
 
 
