@@ -151,6 +151,11 @@ body{
     }
     .projects [class*='projects-item']{
         height: 200px;
+        filter: grayscale(0);
+    }
+    .projects [class*='projects-item']:hover{
+        box-shadow: none;
+        filter: grayscale(0);
     }
 }
 
