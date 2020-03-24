@@ -25,7 +25,7 @@ $(function () {
     // animacja sekcji oferta
     $(window).on('scroll', function() {
         if ($(this).scrollTop() > $('.horizontal-first').offset().top){
-            $('.offer .container').addClass('show');
+            $('.aboutUs .container').addClass('show');
         } 
         // else $('.offer .container').removeClass('show');
     })
@@ -44,7 +44,7 @@ $(function () {
     $(window).on('scroll', function() {
         if ($(this).scrollTop() > $('.horizontal-third').offset().top){
         // if ($(this).scrollTop() > $('.mini-gallery .container .row:nth-of-type(4)').offset().top){
-            $('.aboutUs .container').addClass('show');
+            $('.offer .container').addClass('show');
         } 
         // else $('.aboutUs .container').removeClass('show');
     })
