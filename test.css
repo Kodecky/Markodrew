@@ -1,0 +1,458 @@
+@import url(global.css);
+@import url(header.css);
+@import url(carousel_test.css);
+@import url(footer.css);
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(background/wood-1759566_1920.jpg);
+}
+
+
+
+/*===================main section/ main.html=============*/
+.main {
+    display: none;
+}
+
+/*========offer section==========*/
+
+.offer .container {
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* box-shadow: 0px 0px 15px 1px var(--medium); */
+    max-width: 90%;
+    border-radius: 20px;
+    /* animation-name: appear;
+    animation-duration: 2s; */
+    padding: 150px 0;
+    opacity: 0;
+    transition: padding .3s linear, opacity .3s linear;
+    /* margin: 50px auto; */
+}
+
+.offer .container.show {
+    padding: 80px 0;
+    opacity: 1;
+}
+
+/* @keyframes appear{
+    from {opacity: 0;}
+    to {opacity: 1;}
+} */
+.offer .container h1,
+.offer .container h2 {
+    color: var(--blue);
+    display: inline-block;
+    font-family: var(--header);
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.offer .first-offer-header {
+    font-size: 22px;
+}
+
+.offer .second-offer-header {
+    font-size: 30px;
+}
+
+.offer .third-offer-header {
+    font-size: 24px;
+}
+
+.offer .container span {
+    /* color: #f39c12; */
+    color: var(--medium);
+    font-size: 28px;
+}
+
+.offer h3 {
+    font-size: 22px;
+    color: var(--medium);
+    /* color: #f39c12; */
+    font-family: 'Courgette', cursive;
+}
+
+.offer .container p {
+    color: var(--light);
+    /* color: lavender; */
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 10%;
+    font-size: 18px;
+    line-height: 1.4em;
+    font-family: var(--paragraph);
+}
+
+@media (max-width: 1024px) {
+
+    /* @media (max-width: 767px){ */
+    .offer .container {
+        padding: 100px 0;
+        margin-top: 10px;
+        position: relative;
+    }
+
+    .offer .container.show {
+        padding: 50px 0;
+        opacity: 1;
+    }
+
+    .offer .container h1 {
+        display: block;
+    }
+
+    .offer .container span {
+        display: none;
+    }
+
+    .offer .first-offer-header {
+        font-size: 26px;
+    }
+
+    .offer .second-offer-header {
+        font-size: 24px;
+    }
+
+    .offer .third-offer-header {
+        font-size: 22px;
+    }
+
+    .offer h3 {
+        font-size: 18px;
+    }
+
+    .offer .container p {
+        width: 90%;
+        height: 40vh;
+        overflow-y: scroll;
+    }
+}
+
+@media(orientation: landscape) and (max-height: 500px) {
+    .offer .container [class*='offer-header'] {
+        display: inline-block;
+    }
+}
+
+/*========gallery link============*/
+.gallery-link .container{
+    /* padding: 10px 0; */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* box-shadow: 0px 0px 15px 1px var(--medium); */
+    max-width: 90%;
+    border-radius: 20px;
+    /* animation-name: appear;
+    animation-duration: 2s; */
+    /* padding: 150px 0; */
+    /* opacity: 0; */
+    transition: margin-top .3s linear, opacity .3s linear;
+    /* margin: 50px auto; */
+    display: grid;
+    grid-auto-flow: row;
+    /* column-gap: 2px;
+    row-gap: 1px; */
+    padding: 0;
+    border: 1px solid #000;
+}
+[class*="img-part"]{
+    min-height: 250px;
+    border:1px solid #000;
+}
+.img-part-1{
+    grid-row: 1/3;
+    grid-column: 1;
+    background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-40.jpg);
+    background-size: 100% 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px 0 0 0;
+}
+.img-part-2{
+    grid-row: 1/2;
+    grid-column: 2;
+    background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-69.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+}
+.img-part-3{
+    grid-row: 2/4;
+    grid-column: 3;
+    background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-22.jpg);
+    background-size: 100% 110%;
+    background-position: center;
+    border-radius: 0 0 20px 0;
+}
+.img-part-4{
+    grid-row: 3;
+    grid-column: 1/3;
+    background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-45.jpg);
+    background-size: 100% 130%;
+    background-position: 0 0;
+    border-radius: 0 0 0 20px;
+}
+.img-part-5{
+    grid-row: 1/2;
+    grid-column: 3;
+    background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-2.jpg);
+    background-size: 100% 120%;
+    background-position: center;
+    border-radius: 0 20px 0 0;
+}
+.text-part{
+    grid-row: 2/3;
+    grid-column: 2;
+    position: relative;
+    min-height: 250px;
+    background-color: #000;
+    border:1px dashed var(--light);
+}
+.text-part .gallery-enter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+}
+.text-part h1{
+    font-size: 25px;
+    color: var(--light);
+}
+.text-part button{
+    margin-top: 20px;
+    background-color: var(--blue);
+    padding: 5px 15px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    transition: .3s;
+}
+.text-part button:hover{
+    /* background-color: var(--light); */
+    opacity: 0.6;
+}
+.text-part button a{
+    text-decoration: none;
+    color: #000;
+}
+/* .gallery-link .photo-part{
+    display: flex;
+    order: 1;
+    background-color: #fff;
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+.gallery-link .text-part{
+    display: flex;
+    order: 2;
+    flex-grow: 1;
+    flex-basis: 50%;
+} */
+@media (max-width: 950px){
+    .img-part-3,
+    .img-part-4,
+    .img-part-5{
+        display: none;
+    }
+    .img-part-1{
+        border-radius: 20px 0 0 20px;
+    }
+    .img-part-2{
+        border-radius: 0 20px 0 0;
+    }
+}
+@media (max-width: 550px){
+    [class*="img-part"]{
+        height: 100px;
+    }
+    .img-part-1{
+        border-radius: 20px 0 0 0;
+        background-size: 100% 100%;
+    }
+    .img-part-2{
+        background-size: 180% 100%;
+    }
+    .text-part{
+        height: 100px;
+        grid-column: 1/3;
+    }
+}
+
+
+
+/*========about us section========*/
+
+.aboutUs .container {
+    /* padding: 80px 0; */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* box-shadow: 0px 0px 10px 2px var(--medium); */
+    max-width: 90%;
+    border-radius: 20px;
+    padding: 150px 0;
+    opacity: 0;
+    transition: padding .3s linear, opacity .3s linear;
+}
+
+.aboutUs .container.show {
+    padding: 80px 0;
+    opacity: 1;
+}
+
+.aboutUs .container h1 {
+    color: var(--blue);
+    font-family: var(--header);
+    margin-bottom: 50px;
+}
+
+.aboutUs .container small {
+    color: var(--medium);
+    font-family: 'Courgette', cursive;
+    font-size: 26px;
+    display: block;
+    margin-top: 25px;
+}
+
+.aboutUs .container p {
+    color: var(--light);
+    /* color: lavender; */
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 10%;
+    font-size: 18px;
+    line-height: 1.4em;
+    font-family: var(--paragraph);
+}
+
+@media (max-width: 1024px) {
+
+    /* @media (max-width: 767px){ */
+    .aboutUs .container {
+        padding: 150px 0;
+    }
+
+    .aboutUs .container.show {
+        padding: 80px 0;
+        opacity: 1;
+    }
+
+    .aboutUs .container h1 {
+        font-size: 28px;
+        display: block;
+    }
+
+    .aboutUs .container p {
+        width: 90%;
+        height: 40vh;
+        overflow-y: scroll;
+    }
+}
+
+/*=========contact section=========*/
+
+.contact .container {
+    /* padding: 80px 0; */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* box-shadow: 0px 0px 10px 2px var(--medium); */
+    max-width: 90%;
+    border-radius: 20px 20px 0 0;
+    padding: 150px 0;
+    opacity: 0;
+    transition: padding .3s linear, opacity .3s linear;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.contact .container.show {
+    padding: 80px 0 0 0;
+    opacity: 1;
+}
+
+.contact .container .address {
+    margin-bottom: 10px;
+}
+
+.contact .container .address h2 {
+    color: var(--blue);
+    font-size: 40px;
+    font-family: var(--header);
+}
+
+.contact .container .address p {
+    color: var(--light);
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 2em;
+    padding: 10px 0;
+    font-family: var(--paragraph);
+}
+
+.contact .container .address p a {
+    text-decoration: none;
+    color: var(--white);
+    /* color: #badc58; */
+}
+
+.contact .container .address p a:hover {
+    color: var(--blue);
+    /* color: #6ab04c; */
+}
+
+.contact .container .address p a:visit {
+    color: var(--white);
+    /* color: #badc58; */
+}
+
+.contact .container .wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contact .container iframe {
+    width: 100%;
+    height: 400px;
+    border: 3px solid black;
+    margin-left: -200vw;
+    transition: .5s 1s linear;
+}
+
+.contact .container iframe.show {
+    margin-left: 0;
+}
+
+@media (max-width: 1024px) {
+
+    /* @media (max-width: 767px){ */
+    .contact .container {
+        padding: 150px 0;
+    }
+
+    .contact .container.show {
+        padding: 80px 0 0 0;
+        opacity: 1;
+    }
+
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+    .contact .container iframe {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 500px) {
+    footer {
+        position: sticky; 
+        bottom: 0;
+    }
+}
+
+
