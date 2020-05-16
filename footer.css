@@ -3,10 +3,17 @@ footer {
     height: 200px;
     text-align: center;
     line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-footer div {
+/* footer div {
     height: 50%;
+} */
+
+.footer-container{
+
 }
 
 footer span {

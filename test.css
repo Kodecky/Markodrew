@@ -1,5 +1,5 @@
 @import url(global.css);
-@import url(header.css);
+@import url(header_test.css);
 @import url(carousel_test.css);
 @import url(footer.css);
 
@@ -25,7 +25,7 @@ body {
 
 .offer .container {
     padding: 10px 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: rgba(0, 0, 0, 0.8); */
     /* box-shadow: 0px 0px 15px 1px var(--medium); */
     max-width: 90%;
     border-radius: 20px;
@@ -145,7 +145,7 @@ body {
 /*========gallery link============*/
 .gallery-link .container{
     /* padding: 10px 0; */
-    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: rgba(0, 0, 0, 0.8); */
     /* box-shadow: 0px 0px 15px 1px var(--medium); */
     max-width: 90%;
     border-radius: 20px;
@@ -292,7 +292,7 @@ body {
 
 .aboutUs .container {
     /* padding: 80px 0; */
-    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: rgba(0, 0, 0, 0.8); */
     /* box-shadow: 0px 0px 10px 2px var(--medium); */
     max-width: 90%;
     border-radius: 20px;
@@ -359,7 +359,7 @@ body {
 
 .contact .container {
     /* padding: 80px 0; */
-    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: rgba(0, 0, 0, 0.8); */
     /* box-shadow: 0px 0px 10px 2px var(--medium); */
     max-width: 90%;
     border-radius: 20px 20px 0 0;

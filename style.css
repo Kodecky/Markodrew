@@ -193,15 +193,17 @@ body {
 .img-part-4{
     grid-row: 3;
     grid-column: 1/3;
-    background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-45.jpg);
-    background-size: 100% 130%;
+    /* background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-45.jpg); */
+    background-image: url(schody-Markodrew/schody-drewniane-Markodrew-82.jpg);
+    background-size: 100% 220%;
     background-position: 0 0;
     border-radius: 0 0 0 20px;
 }
 .img-part-5{
     grid-row: 1/2;
     grid-column: 3;
-    background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-2.jpg);
+    /* background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-2.jpg); */
+    background-image: url(schody-Markodrew/schody-drewniane-Markodrew-98.jpg);
     background-size: 100% 120%;
     background-position: center;
     border-radius: 0 20px 0 0;

@@ -173,6 +173,34 @@ body{
     background-size: 100% 140%;
     background-repeat: no-repeat;
 }
+.projects .projects-item-16{
+    /* trzeba dodac zdjecia do folderu zdjec o mniejszej rozdzielczosci */
+    background-image: url(schody-Markodrew/schody-drewniane-Markodrew-103.jpg);
+    background-position: 100% 20%;
+    background-size: 100% 140%;
+    background-repeat: no-repeat;
+}
+.projects .projects-item-17{
+    /* trzeba dodac zdjecia do folderu zdjec o mniejszej rozdzielczosci */
+    background-image: url(schody-Markodrew/schody-drewniane-Markodrew-109.jpg);
+    background-position: center;
+    background-size: 100% 160%;
+    background-repeat: no-repeat;
+}
+.projects .projects-item-18{
+    /* trzeba dodac zdjecia do folderu zdjec o mniejszej rozdzielczosci */
+    background-image: url(schody-Markodrew/schody-drewniane-Markodrew-117.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.projects .projects-item-19{
+    /* trzeba dodac zdjecia do folderu zdjec o mniejszej rozdzielczosci */
+    background-image: url(schody-Markodrew/schody-drewniane-Markodrew-124.jpg);
+    background-position: center;
+    background-size: 100% 140%;
+    background-repeat: no-repeat;
+}
 @media (max-width: 767px){
     .projects .wrapper [class*='col-md']{
         min-height: 200px;
