@@ -32,6 +32,7 @@ body{
     animation-name: appear;
     animation-duration: 2s;
     padding-bottom: 50px;
+    position: relative;
 }
 @keyframes appear{
     from {opacity: 0.0;}
@@ -41,13 +42,31 @@ body{
     margin: 0;
     width: 100%;
 }
-.projects p{
+.projects .number{
+    position: absolute;
+    bottom: -15px;
+    right: 15px;
+    color: var(--medium);
+    font-size: 60px;
+}
+.projects .description{
     color: var(--light);
     /* color: white; */
     font-family: 'Merienda', sans-serif;
     font-size: 16px;;
     border-bottom: 1px solid #888;
+    /* padding-left: 50px; */
 }
+/* .projects .description::before{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: -100%;
+    width: 380px;
+    height: 2px;
+    border-bottom: 1px solid blue;
+    overflow: hidden;
+} */
 .projects .wrapper{
     margin-top: 80px;
     border-radius: 20px;
