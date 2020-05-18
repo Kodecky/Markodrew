@@ -8,7 +8,6 @@
     box-sizing: border-box;
 }
 body{
-    /*background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);*/
     background-image: url(background/wood-1759566_1920.jpg);
 }
 
@@ -48,25 +47,14 @@ body{
     right: 15px;
     color: var(--medium);
     font-size: 60px;
+    font-family: var(--paragraph);
 }
 .projects .description{
     color: var(--light);
-    /* color: white; */
-    font-family: 'Merienda', sans-serif;
-    font-size: 16px;;
+    font-family: var(--paragraph);
+    font-size: 16px;
     border-bottom: 1px solid #888;
-    /* padding-left: 50px; */
 }
-/* .projects .description::before{
-    content: '';
-    position: absolute;
-    bottom: 10px;
-    left: -100%;
-    width: 380px;
-    height: 2px;
-    border-bottom: 1px solid blue;
-    overflow: hidden;
-} */
 .projects .wrapper{
     margin-top: 80px;
     border-radius: 20px;
@@ -80,16 +68,13 @@ body{
     border-radius: 15px;
     margin-top: 50px;
     margin-bottom: 15px;
-    /* box-shadow: 4px 4px 10px black; */
     transition: .3s;
     overflow: hidden;
     filter: grayscale(50%);
 }
 .projects [class*='projects-item']:hover{
-    /* transform: scale(1.03); */
     cursor: pointer;
     box-shadow: 0px 0px 15px 1px var(--medium);
-    /* box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.7); */
     filter: grayscale(0);
 
 }
@@ -220,6 +205,15 @@ body{
     background-size: 100% 140%;
     background-repeat: no-repeat;
 }
+@media (max-width: 1280px){
+    .projects .number{
+        bottom: -14px;
+        font-size: 50px;
+    }
+    .projects .description{
+        font-size: 14px;
+    }
+}
 @media (max-width: 767px){
     .projects .wrapper [class*='col-md']{
         min-height: 200px;
@@ -275,7 +269,6 @@ body{
 }
 .gallery a{
     height: 250px;
-    /* border-radius: 10px; */
     border: 2px solid white;
     overflow: hidden;
 }
@@ -287,8 +280,6 @@ body{
 }
 .gallery img{
     height: 100%;
-    /* border-radius: 20px; */
-    /* border: 2px solid white; */
     transition: .5s;
 }
 .gallery img:hover{
@@ -316,7 +307,6 @@ body{
     }
     .mobile{
         display: none;
-        /* display: block; */
         text-align: center;
     }
     .mobile .container{
@@ -327,7 +317,6 @@ body{
         margin-right: auto;
     }
     .desk .gallery{
-        /* display: none; */
         flex-wrap: wrap;
     }
     .desk .gallery a{

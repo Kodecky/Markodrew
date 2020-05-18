@@ -26,15 +26,11 @@ body {
 .offer .container {
     padding: 10px 0;
     background-color: rgba(0, 0, 0, 0.8);
-    /* box-shadow: 0px 0px 15px 1px var(--medium); */
     max-width: 90%;
     border-radius: 20px;
-    /* animation-name: appear;
-    animation-duration: 2s; */
     padding: 150px 0;
     opacity: 0;
     transition: padding .3s linear, opacity .3s linear;
-    /* margin: 50px auto; */
 }
 
 .offer .container.show {
@@ -42,10 +38,6 @@ body {
     opacity: 1;
 }
 
-/* @keyframes appear{
-    from {opacity: 0;}
-    to {opacity: 1;}
-} */
 .offer .container h1,
 .offer .container h2 {
     color: var(--blue);
@@ -56,19 +48,18 @@ body {
 }
 
 .offer .first-offer-header {
-    font-size: 22px;
+    font-size: 50px;
 }
 
 .offer .second-offer-header {
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .offer .third-offer-header {
-    font-size: 24px;
+    font-size: 50px;
 }
 
 .offer .container span {
-    /* color: #f39c12; */
     color: var(--medium);
     font-size: 28px;
 }
@@ -76,13 +67,11 @@ body {
 .offer h3 {
     font-size: 22px;
     color: var(--medium);
-    /* color: #f39c12; */
-    font-family: 'Courgette', cursive;
+    font-family: 'Anton', sans-serif;
 }
 
 .offer .container p {
     color: var(--light);
-    /* color: lavender; */
     width: 80%;
     margin: 0 auto;
     padding: 30px 10%;
@@ -93,7 +82,6 @@ body {
 
 @media (max-width: 1024px) {
 
-    /* @media (max-width: 767px){ */
     .offer .container {
         padding: 100px 0;
         margin-top: 10px;
@@ -132,6 +120,7 @@ body {
     .offer .container p {
         width: 90%;
         height: 40vh;
+        line-height: 130%;
         overflow-y: scroll;
     }
 }
@@ -144,21 +133,12 @@ body {
 
 /*========gallery link============*/
 .gallery-link .container{
-    /* padding: 10px 0; */
     background-color: rgba(0, 0, 0, 0.8);
-    /* box-shadow: 0px 0px 15px 1px var(--medium); */
     max-width: 90%;
     border-radius: 20px;
-    /* animation-name: appear;
-    animation-duration: 2s; */
-    /* padding: 150px 0; */
-    /* opacity: 0; */
     transition: margin-top .3s linear, opacity .3s linear;
-    /* margin: 50px auto; */
     display: grid;
     grid-auto-flow: row;
-    /* column-gap: 2px;
-    row-gap: 1px; */
     padding: 0;
     border: 1px solid #000;
 }
@@ -169,7 +149,6 @@ body {
 .img-part-1{
     grid-row: 1/3;
     grid-column: 1;
-    /* background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-40.jpg); */
     background-image: url(schody-Markodrew/schody-drewniane-Markodrew-125.jpg);
     background-size: 100% 100%;
     background-position: 100% center;
@@ -194,7 +173,6 @@ body {
 .img-part-4{
     grid-row: 3;
     grid-column: 1/2;
-    /* background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-45.jpg); */
     background-image: url(schody-Markodrew/schody-drewniane-Markodrew-92.jpg);
     background-size: 100% 130%;
     background-position: bottom;
@@ -203,7 +181,6 @@ body {
 .img-part-5{
     grid-row: 1/2;
     grid-column: 3;
-    /* background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-2.jpg); */
     background-image: url(schody-Markodrew/schody-drewniane-Markodrew-98.jpg);
     background-size: 100% 120%;
     background-position: center;
@@ -212,7 +189,6 @@ body {
 .img-part-6{
     grid-row: 3;
     grid-column: 2/3;
-    /* background-image: url(zdjecia-schodow/schody-drewniane-Markodrew-45.jpg); */
     background-image: url(schody-Markodrew/schody-drewniane-Markodrew-82.jpg);
     background-size: 100% 100%;
     background-position: center;
@@ -235,7 +211,9 @@ body {
     width: 80%;
 }
 .text-part h1{
-    font-size: 25px;
+    font-size: 27px;
+    font-family: var(--header);
+    letter-spacing: 1px;
     color: var(--light);
 }
 .text-part button{
@@ -247,30 +225,18 @@ body {
     transition: .3s;
 }
 .text-part button:hover{
-    /* background-color: var(--light); */
     opacity: 0.6;
 }
 .text-part button a{
     text-decoration: none;
+    font-family: var(--paragraph);
     color: #000;
 }
-/* .gallery-link .photo-part{
-    display: flex;
-    order: 1;
-    background-color: #fff;
-    flex-grow: 1;
-    flex-basis: 50%;
-}
-.gallery-link .text-part{
-    display: flex;
-    order: 2;
-    flex-grow: 1;
-    flex-basis: 50%;
-} */
 @media (max-width: 950px){
     .img-part-3,
     .img-part-4,
-    .img-part-5{
+    .img-part-5,
+    .img-part-6{
         display: none;
     }
     .img-part-1{
@@ -302,9 +268,7 @@ body {
 /*========about us section========*/
 
 .aboutUs .container {
-    /* padding: 80px 0; */
     background-color: rgba(0, 0, 0, 0.8);
-    /* box-shadow: 0px 0px 10px 2px var(--medium); */
     max-width: 90%;
     border-radius: 20px;
     padding: 150px 0;
@@ -320,12 +284,13 @@ body {
 .aboutUs .container h1 {
     color: var(--blue);
     font-family: var(--header);
+    font-size: 50px;
     margin-bottom: 50px;
 }
 
 .aboutUs .container small {
     color: var(--medium);
-    font-family: 'Courgette', cursive;
+    font-family: var(--small);
     font-size: 26px;
     display: block;
     margin-top: 25px;
@@ -333,18 +298,16 @@ body {
 
 .aboutUs .container p {
     color: var(--light);
-    /* color: lavender; */
     width: 80%;
     margin: 0 auto;
     padding: 10px 10%;
     font-size: 18px;
-    line-height: 1.4em;
+    line-height: 130%;
     font-family: var(--paragraph);
 }
 
 @media (max-width: 1024px) {
 
-    /* @media (max-width: 767px){ */
     .aboutUs .container {
         padding: 150px 0;
     }
@@ -369,9 +332,7 @@ body {
 /*=========contact section=========*/
 
 .contact .container {
-    /* padding: 80px 0; */
     background-color: rgba(0, 0, 0, 0.8);
-    /* box-shadow: 0px 0px 10px 2px var(--medium); */
     max-width: 90%;
     border-radius: 20px 20px 0 0;
     padding: 150px 0;
@@ -390,9 +351,9 @@ body {
     margin-bottom: 10px;
 }
 
-.contact .container .address h2 {
+.contact .container .address h1 {
     color: var(--blue);
-    font-size: 40px;
+    font-size: 50px;
     font-family: var(--header);
 }
 
@@ -409,17 +370,14 @@ body {
 .contact .container .address p a {
     text-decoration: none;
     color: var(--white);
-    /* color: #badc58; */
 }
 
 .contact .container .address p a:hover {
     color: var(--blue);
-    /* color: #6ab04c; */
 }
 
 .contact .container .address p a:visit {
     color: var(--white);
-    /* color: #badc58; */
 }
 
 .contact .container .wrapper {
@@ -441,7 +399,6 @@ body {
 
 @media (max-width: 1024px) {
 
-    /* @media (max-width: 767px){ */
     .contact .container {
         padding: 150px 0;
     }

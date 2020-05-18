@@ -1,6 +1,7 @@
 :root {
-    --paragraph: 'Play', sans-serif;
-    --header: 'Archivo Black', sans-serif;
+    --paragraph: 'Lato', sans-serif;
+    --header: 'Anton', sans-serif;
+    --small: 'Anton', sans-serif;
     --yellow: #f1c40f;
     --white: #FFF;
     --light: #CFC07D;

@@ -8,13 +8,9 @@ footer {
     align-items: center;
 }
 
-/* footer div {
-    height: 50%;
+/* .footer-container{
+
 } */
-
-.footer-container{
-
-}
 
 footer span {
     color: var(--light);
@@ -24,8 +20,8 @@ footer span {
 }
 
 footer .footer-slogan {
-    font-family: 'Courgette', cursive;
-    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    font-size: 22px;
 }
 
 footer .footer-brand {
@@ -61,7 +57,6 @@ footer a:focus {
 
 @media (max-width: 1024px) {
 
-    /* @media (max-width: 767px){ */
     footer {
         line-height: 40px;
     }
