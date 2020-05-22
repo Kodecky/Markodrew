@@ -41,6 +41,12 @@ body{
     margin: 0;
     width: 100%;
 }
+.projects .gallery-header{
+    text-align: center;
+    font-size: 50px;
+    font-family: var(--header);
+    color: var(--blue);
+}
 .projects .number{
     position: absolute;
     bottom: -15px;

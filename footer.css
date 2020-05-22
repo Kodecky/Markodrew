@@ -8,10 +8,6 @@ footer {
     align-items: center;
 }
 
-/* .footer-container{
-
-} */
-
 footer span {
     color: var(--light);
     font-size: 18px;
@@ -63,6 +59,18 @@ footer a:focus {
 
     footer a {
         display: block;
+    }
+}
+
+@media (max-width: 767px){
+    footer .footer-slogan{
+        font-size: 18px;
+    }
+    footer .footer-brand {
+        font-size: 18px;
+    }
+    footer a {
+        font-size: 16px;
     }
 }
 

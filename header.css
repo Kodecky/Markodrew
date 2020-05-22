@@ -1,19 +1,23 @@
-header nav .container-fluid {
-    width: 100%;
-    margin: 0 auto;
+header .navbar{
+    background-color: #000;
+    height: 80px;
+    margin-bottom: 0;
+}
+header nav .container {
     position: relative;
-    background-color: black;
+    padding-top: 25px;
+    padding-right: 0;
 }
 
 header nav .navbar-brand span {
-    font-size: 30px;
-    font-family: 'major mono display', monospace;
+    font-size: 58px;
+    font-family: 'Great Vibes', cursive;
     font-weight: bold;
     color: var(--light);
 }
 
 header nav ul li a {
-    font-size: 18px;
+    font-size: 20px;
     font-family: var(--paragraph);
     transition: .3s;
     color: var(--light) !important;

@@ -11,7 +11,14 @@
 body {
     margin: 0;
     padding: 0;
+    padding-top: 70px;
     background-image: url(background/wood-1759566_1920.jpg);
+}
+
+@media (max-width: 767px){
+    body{
+        padding-top: 0;
+    }
 }
 
 
@@ -230,7 +237,8 @@ body {
 .text-part button a{
     text-decoration: none;
     font-family: var(--paragraph);
-    color: #000;
+    /* color: var(--white); */
+    color: var(--white);
 }
 @media (max-width: 950px){
     .img-part-3,
@@ -285,7 +293,6 @@ body {
     color: var(--blue);
     font-family: var(--header);
     font-size: 50px;
-    margin-bottom: 50px;
 }
 
 .aboutUs .container small {
@@ -293,7 +300,7 @@ body {
     font-family: var(--small);
     font-size: 26px;
     display: block;
-    margin-top: 25px;
+    padding: 25px 0 30px 0;
 }
 
 .aboutUs .container p {
@@ -320,6 +327,10 @@ body {
     .aboutUs .container h1 {
         font-size: 28px;
         display: block;
+    }
+
+    .aboutUs .container small{
+        font-size: 18px;
     }
 
     .aboutUs .container p {
