@@ -64,10 +64,10 @@ footer a:focus {
 
 @media (max-width: 767px){
     footer .footer-slogan{
-        font-size: 18px;
+        font-size: 20px;
     }
     footer .footer-brand {
-        font-size: 18px;
+        font-size: 20px;
     }
     footer a {
         font-size: 16px;
