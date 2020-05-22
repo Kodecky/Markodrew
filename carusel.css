@@ -34,9 +34,9 @@
 }
 .carousel-caption [class*="slogan-"]{
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 10%;
-    font-size: 120px;
+    font-size: 100px;
     font-family: 'Great Vibes', cursive;
 }
 
@@ -101,8 +101,6 @@
         position: absolute;
         font-family: 'great vibes', cursive;
         font-size: 70px;
-        /* color: rgb(86, 129, 185); */
-        /* color: rgb(124, 141, 28); */
         text-transform: capitalize;
         color: var(--white);
     }

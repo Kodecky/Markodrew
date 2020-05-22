@@ -59,13 +59,17 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 767px) {
-    header .container-fluid {
-        padding-right: 0;
+    header .container {
+        padding-right: 5px !important;
     }
 
     .navbar-header {
         display: inline-block;
     }
+    
+    header nav ul li a{
+        font-size: 18px;
+    } 
 
     .dropdown {
         display: inline-block;
